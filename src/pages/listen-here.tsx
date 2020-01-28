@@ -158,6 +158,64 @@ const ListenHerePage = _props => {
             ></iframe>
           </div>
         </div>
+
+        <div>
+          <div>
+            <img src="images/listen-here/dudu-mala.jpg" />
+            <div>Dudu Maia & Douglas Loura Vibrações</div>
+          </div>
+          <div>
+            <img src="images/listen-here/stubby.jpg" />
+            <div>Stubby & the Electric Blanket on and on and on</div>
+          </div>
+          <div>
+            <img src="images/listen-here/sam.jpg" />
+            <div>Sam Doores Farmland Blues</div>
+          </div>
+
+          <div>
+            <img src="images/listen-here/kate.jpg" />
+            <div>
+              Kate Long & Robin Kessinger Red Rockin’ Chair Live at Toolshed
+              Soundlab
+            </div>
+          </div>
+
+          <div>
+            <img src="images/listen-here/gallus.jpg" />
+            <div>Gallus Bros. Instrumental</div>
+          </div>
+
+          <div>
+            <img src="images/listen-here/paul.jpg" />
+            <div>Paul Chasman / Last of Us Soundtrack</div>
+          </div>
+
+          <div>
+            <img src="images/listen-here/usana.jpg" />
+            <div>Usana Great Day</div>
+          </div>
+          <div>
+            <img src="images/listen-here/crow.jpg" />
+            <div>Crow Quill Night Owls Wake Up Sinners</div>
+          </div>
+          <div>
+            <img src="images/listen-here/gallus-2.jpg" />
+            <div>Gallus Bros, mighty good leader</div>
+          </div>
+          <div>
+            <img src="images/listen-here/inkwell.jpg" />
+            <div>Inkwell Rhythm Makers Oh Mama</div>
+          </div>
+          <div>
+            <img src="images/listen-here/below.jpg" />
+            <div>Below the Salt Alliswinigitator</div>
+          </div>
+          <div>
+            <img src="images/listen-here/black.jpg" />
+            <div>Black Resonators So Nice</div>
+          </div>
+        </div>
       </main>
     </div>
   )
