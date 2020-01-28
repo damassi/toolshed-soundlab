@@ -1,5 +1,9 @@
 import React from "react"
 import Layout from "src/components/layout"
+import { Flex, Text, Box } from "rebass"
+import { SubscribeForm } from "src/components/SubscribeForm"
+import { Link } from "gatsby"
+import { Spacer } from "src/components/Spacer"
 
 // import Layout from "../components/layout"
 // import Image from "../components/image"
@@ -8,45 +12,79 @@ import Layout from "src/components/layout"
 export default function IndexPage() {
   return (
     <Layout>
-      <div>
+      <div style={{ textAlign: "center" }}>
         <h1>Toolshed SoundLab</h1>
         <h4>
           A comfortable, relaxed recording studio in the heart of Port Townsend
         </h4>
       </div>
       <div>
-        <img src="/images/home/studio.jpg" />
-        <img src="/images/home/logo.jpg" />
-        <img src="/images/home/george.png" />
+        <Flex justifyContent="space-between">
+          <Link to="/soundlab">
+            <img src="/images/home/studio.jpg" height={250} />
+          </Link>
+          <Link to="/">
+            <img src="/images/home/logo.jpg" />
+          </Link>
+          <Link to="/gr-music">
+            <img src="/images/home/george.png" height={250} />
+          </Link>
+        </Flex>
 
         <p>
-          “music is the most fun you can have without gettin’ into trouble “ -
-          Toolshed Do-Right
+          <Box p={2}>
+            <Text
+              style={{ fontStyle: "italic", textAlign: "center" }}
+              fontSize={3}
+            >
+              "Music is the most fun you can have without gettin’ into trouble"{" "}
+              <br />
+              <Text fontSize={2}>- Toolshed Do-Right</Text>
+            </Text>
+          </Box>
         </p>
 
-        <p>
-          You can now easily stay informed of music and recording events
-          happening at Toolshed Soundlab by subscribing to our mailing list
-          here.
-        </p>
+        <Box>
+          <Text color="#ffa70a" textAlign="center">
+            <h4>
+              You can now easily stay informed of music and recording events
+              happening at Toolshed Soundlab by subscribing to our mailing list
+              here.
+            </h4>
+          </Text>
 
-        <button>Subscribe</button>
-        <button>Email</button>
+          <Flex justifyContent="center">
+            <SubscribeForm />
+          </Flex>
+        </Box>
 
-        <div>
-          <div>
-            <img src="/images/home/michaela.jpg" />
-          </div>
-          <p>
-            “My Way Home” Micaela Kingslight’s new album is now finished and
-            ready to release on 2/2/2020. You can sample it here:
-            https://micaelakingslight.bandcamp.com/ preorder the CD or buy a
-            download now. Produced by George Rezendes and Micaela Kingslight
-            Recorded and mixed by George Rezendes at ToolShed SoundLab, Port
-            Townsend Wa. Mastering and assistant engineering by Camelia Jade
-            Lazenby
-          </p>
-        </div>
+        <Spacer my={4} />
+
+        <h2>Recent Releases</h2>
+        <Flex>
+          <Flex>
+            <Box width="33%" pr={4}>
+              <img src="/images/home/michaela.jpg" />
+            </Box>
+            <Box width="66%">
+              “My Way Home” Micaela Kingslight’s new album is now finished and
+              ready to release on 2/2/2020. You can sample it here:
+              <a
+                href="https://micaelakingslight.bandcamp.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                https://micaelakingslight.bandcamp.com{" "}
+              </a>
+              preorder the CD or buy a download now. Produced by George Rezendes
+              and Micaela Kingslight Recorded and mixed by George Rezendes at
+              ToolShed SoundLab, Port Townsend Wa. Mastering and assistant
+              engineering by Camelia Jade Lazenby
+            </Box>
+          </Flex>
+        </Flex>
+
+        <hr />
 
         <div>
           <div>
@@ -75,6 +113,9 @@ export default function IndexPage() {
             https://tinyurl.com/roll-columbia
           </p>
         </div>
+
+        <hr />
+
         <div>
           <div>
             <iframe
@@ -91,6 +132,9 @@ export default function IndexPage() {
             Mr. Lucas Hicks
           </p>
         </div>
+
+        <hr />
+
         <div>
           <div>
             <iframe

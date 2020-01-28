@@ -1,16 +1,20 @@
 import React from "react"
 import Layout from "src/components/layout"
+import { Flex } from "rebass"
 
 const SoundLabPage = _props => {
   return (
     <Layout>
-      <div>
+      <div style={{ textAlign: "center" }}>
         <h1>Music Production & Recording at Toolshed SoundLab</h1>
         <h4>
           I offer music production & recording services at a comfortable studio
           in Port Townsend, WA.
         </h4>
       </div>
+      <Flex>
+        <img src="images/toolshed-360.jpg" />
+      </Flex>
       <div>
         <div>
           <img src="images/soundlab/studio-1.jpg" />

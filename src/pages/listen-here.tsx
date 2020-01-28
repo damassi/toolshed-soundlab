@@ -4,7 +4,7 @@ import Layout from "src/components/layout"
 const ListenHerePage = _props => {
   return (
     <Layout>
-      <div>
+      <div style={{ textAlign: "center" }}>
         <h1>Toolshed SoundLab Productions - George Rezendes</h1>
         <h4>
           These are some of the tunes I’ve recorded, mixed and / or produced

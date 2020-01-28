@@ -8,7 +8,7 @@ const GRMusicPage = _props => {
         <div>
           <div>
             <div>
-              <h1>george rezendes</h1>
+              <h1 style={{ fontFamily: "Herculanum" }}>george rezendes</h1>
               <h4>country blues, ragtime, folk and roots-rock</h4>
             </div>
             <img src="images/gr-music/first-strat-67.jpg" />
