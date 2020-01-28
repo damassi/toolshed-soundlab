@@ -20,5 +20,5 @@
     "target": "es2015"
   },
   "include": ["**/*.ts", "**/*.tsx"],
-  "exclude": ["inspiration", "node_modules/*", "public/*"]
+  "exclude": ["inspiration/*", "node_modules/*", "public/*"]
 }
