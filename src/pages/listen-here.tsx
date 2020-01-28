@@ -1,16 +1,17 @@
 import React from "react"
+import Layout from "src/components/layout"
 
 const ListenHerePage = _props => {
   return (
-    <div>
-      <header>
+    <Layout>
+      <div>
         <h1>Toolshed SoundLab Productions - George Rezendes</h1>
         <h4>
           These are some of the tunes I’ve recorded, mixed and / or produced
           since 1998. Enjoy!
         </h4>
-      </header>
-      <main>
+      </div>
+      <div>
         <div>
           <div>
             <div>Alanna Dailey - I’ve Got To Use My Imagination </div>
@@ -216,8 +217,8 @@ const ListenHerePage = _props => {
             <div>Black Resonators So Nice</div>
           </div>
         </div>
-      </main>
-    </div>
+      </div>
+    </Layout>
   )
 }
 

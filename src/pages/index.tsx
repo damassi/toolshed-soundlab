@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import Layout from "src/components/layout"
 
 // import Layout from "../components/layout"
 // import Image from "../components/image"
@@ -7,22 +7,14 @@ import { Link } from "gatsby"
 
 export default function IndexPage() {
   return (
-    <div>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/soundlab">SoundLab</Link>
-        <Link to="/listen-here">Listen Here</Link>
-        <Link to="/classes-workshops">Classes / Workshops</Link>
-        <Link to="/gr-music">GR Music</Link>
-        <Link to="/lutherie">Lutherie</Link>
-      </nav>
-      <header>
+    <Layout>
+      <div>
         <h1>Toolshed SoundLab</h1>
         <h4>
           A comfortable, relaxed recording studio in the heart of Port Townsend
         </h4>
-      </header>
-      <main>
+      </div>
+      <div>
         <img src="/images/home/studio.jpg" />
         <img src="/images/home/logo.jpg" />
         <img src="/images/home/george.png" />
@@ -112,29 +104,7 @@ export default function IndexPage() {
           </div>
           <p>a live recording of the Blackberry Bushes</p>
         </div>
-      </main>
-    </div>
+      </div>
+    </Layout>
   )
 }
-
-/*
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <header>
-      <h1>Toolshed SoundLab</h1>
-      <h3>
-        A comfortable, relaxed recording studio in the heart of Port Townsend
-      </h3>
-    </header>
-    <img src="/images/home/logo.jpg" />
-
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link>
-  </Layout>
-)
-
-
-*/

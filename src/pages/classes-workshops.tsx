@@ -1,15 +1,16 @@
 import React from "react"
+import Layout from "src/components/layout"
 
 const ClassesWorkshopsPage = _props => {
   return (
-    <div>
-      <header>
+    <Layout>
+      <div>
         <div>
           <img src="images/classes-workshops/soundlab-banner.jpg" />
         </div>
         <h1>Classes & Workshops</h1>
-      </header>
-      <main>
+      </div>
+      <div>
         <div>
           <h3>Guitar Lessons</h3>
           <ul>
@@ -55,8 +56,8 @@ const ClassesWorkshopsPage = _props => {
         <div>
           <button>Email Me</button>
         </div>
-      </main>
-    </div>
+      </div>
+    </Layout>
   )
 }
 

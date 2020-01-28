@@ -1,9 +1,10 @@
 import React from "react"
+import Layout from "src/components/layout"
 
 const GRMusicPage = _props => {
   return (
-    <div>
-      <header>
+    <Layout>
+      <div>
         <div>
           <div>
             <div>
@@ -16,8 +17,8 @@ const GRMusicPage = _props => {
             <img src="images/gr-music/george.jpg" />
           </div>
         </div>
-      </header>
-      <main>
+      </div>
+      <div>
         <div>
           A few tunes I’ve recorded over the years, solo and with various
           projects - I hope you enjoy them. The last recorded toolshed trio
@@ -77,8 +78,8 @@ const GRMusicPage = _props => {
             </div>
           </div>
         </div>
-      </main>
-    </div>
+      </div>
+    </Layout>
   )
 }
 

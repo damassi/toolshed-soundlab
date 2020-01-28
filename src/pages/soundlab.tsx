@@ -1,16 +1,17 @@
 import React from "react"
+import Layout from "src/components/layout"
 
 const SoundLabPage = _props => {
   return (
-    <div>
-      <header>
+    <Layout>
+      <div>
         <h1>Music Production & Recording at Toolshed SoundLab</h1>
         <h4>
           I offer music production & recording services at a comfortable studio
           in Port Townsend, WA.
         </h4>
-      </header>
-      <main>
+      </div>
+      <div>
         <div>
           <img src="images/soundlab/studio-1.jpg" />
           <img src="images/soundlab/studio-2.jpg" />
@@ -209,8 +210,8 @@ const SoundLabPage = _props => {
           <br />
           David Vohs
         </div>
-      </main>
-    </div>
+      </div>
+    </Layout>
   )
 }
 

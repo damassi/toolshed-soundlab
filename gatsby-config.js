@@ -1,3 +1,4 @@
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -12,6 +13,9 @@ module.exports = {
     "gatsby-plugin-netlify-cms",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-typescript",
+    {
+      resolve: "gatsby-plugin-root-import",
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

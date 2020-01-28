@@ -1,12 +1,13 @@
 import React from "react"
+import Layout from "src/components/layout"
 
 const LutheriePage = _props => {
   return (
-    <div>
-      <header>
+    <Layout>
+      <div>
         <h1>Lutherie</h1>
-      </header>
-      <main>
+      </div>
+      <div>
         <div>
           <div>
             I first became interested in guitar making at the age of 16.
@@ -53,8 +54,8 @@ const LutheriePage = _props => {
             </div>
           </div>
         </div>
-      </main>
-    </div>
+      </div>
+    </Layout>
   )
 }
 
