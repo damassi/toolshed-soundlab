@@ -1,23 +1,30 @@
 import React from "react"
 import Layout from "src/components/layout"
+import { Box, Flex } from "rebass"
+import { Spacer } from "src/components/Spacer"
 
 const GRMusicPage = _props => {
   return (
     <Layout>
-      <div>
-        <div>
-          <div>
-            <div>
-              <h1 style={{ fontFamily: "Herculanum" }}>george rezendes</h1>
+      <Box>
+        <Flex justifyContent="center">
+          <Box mr={2} width="40%">
+            <Box>
+              <h2 style={{ fontFamily: "Herculanum", marginBottom: 5 }}>
+                george rezendes
+              </h2>
               <h4>country blues, ragtime, folk and roots-rock</h4>
-            </div>
+            </Box>
             <img src="images/gr-music/first-strat-67.jpg" />
-          </div>
-          <div>
+          </Box>
+          <Box>
             <img src="images/gr-music/george.jpg" />
-          </div>
-        </div>
-      </div>
+          </Box>
+        </Flex>
+      </Box>
+
+      <Spacer my={4} />
+
       <div>
         <div>
           A few tunes I’ve recorded over the years, solo and with various
