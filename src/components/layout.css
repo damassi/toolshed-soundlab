@@ -48,6 +48,9 @@ a:active,
 a:hover {
   outline-width: 0;
 }
+a:visited {
+  color: #ccc;
+}
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;

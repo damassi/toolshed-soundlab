@@ -17,18 +17,20 @@ export default function IndexPage() {
           A comfortable, relaxed recording studio in the heart of Port Townsend
         </h4>
       </div>
-      <div>
-        <Flex justifyContent="space-between">
-          <Link to="/soundlab">
-            <img src="/images/home/studio.jpg" height={250} />
-          </Link>
-          <Link to="/">
-            <img src="/images/home/logo.jpg" />
-          </Link>
-          <Link to="/gr-music">
-            <img src="/images/home/george.png" height={250} />
-          </Link>
-        </Flex>
+      <Box>
+        <Box>
+          <Flex justifyContent="space-between">
+            <Link to="/soundlab">
+              <img src="/images/home/studio.jpg" height={250} />
+            </Link>
+            <Link to="/">
+              <img src="/images/home/logo.jpg" />
+            </Link>
+            <Link to="/gr-music">
+              <img src="/images/home/george.png" height={250} />
+            </Link>
+          </Flex>
+        </Box>
 
         <Quote>
           "Music is the most fun you can have without gettin’ into trouble"{" "}
@@ -76,7 +78,9 @@ export default function IndexPage() {
           </Flex>
         </Flex>
 
-        <hr />
+        <Box my={4}>
+          <hr />
+        </Box>
 
         <div>
           <div>
@@ -88,28 +92,34 @@ export default function IndexPage() {
               src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/309920488&amp;color=ff9900&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"
             ></iframe>
           </div>
-          <p>
-            This version of Pastures of Plenty, my favorite Woody Guthrie tune,
-            was recorded during a session for the Smithsonian-Folkways tribute
-            album titled ‘Roll Columbia’ but was not intended for the CD. My
-            version of The Song of the Grand Coulee Dam was included on the CD.
-            Produced by my good friend Joe Seamons, it features many North-West
-            musicians. David and Tracy Grisman accompanied me on mandolin and
-            bass on both tunes. notes from Smithsonian and link to project; Roll
-            Columbia: Woody Guthrie’s 26 Northwest Songs is a trove of new
-            discoveries, and a celebration of Guthrie’s genius and lasting
-            contributions to both the history and musical traditions of the
-            Pacific Northwest. In 1941, the Bonneville Power Administration
-            commissioned Guthrie to write songs to help promote to the public
-            the construction of dams along the Columbia River.
-            https://tinyurl.com/roll-columbia
-          </p>
+          <Text fontSize={2}>
+            <p>
+              This version of Pastures of Plenty, my favorite Woody Guthrie
+              tune, was recorded during a session for the Smithsonian-Folkways
+              tribute album titled ‘Roll Columbia’ but was not intended for the
+              CD. My version of The Song of the Grand Coulee Dam was included on
+              the CD. Produced by my good friend Joe Seamons, it features many
+              North-West musicians. David and Tracy Grisman accompanied me on
+              mandolin and bass on both tunes.
+            </p>
+            <p>
+              <b>Notes from Smithsonian</b>: Roll Columbia: Woody Guthrie’s 26
+              Northwest Songs is a trove of new discoveries, and a celebration
+              of Guthrie’s genius and lasting contributions to both the history
+              and musical traditions of the Pacific Northwest. In 1941, the
+              Bonneville Power Administration commissioned Guthrie to write
+              songs to help promote to the public the construction of dams along
+              the Columbia River. https://tinyurl.com/roll-columbia
+            </p>
+          </Text>
         </div>
 
-        <hr />
+        <Box my={4}>
+          <hr />
+        </Box>
 
-        <div>
-          <div>
+        <Box style={{ textAlign: "center" }}>
+          <Box>
             <iframe
               width="560"
               height="315"
@@ -118,17 +128,19 @@ export default function IndexPage() {
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-          </div>
+          </Box>
           <p>
-            from the Rattletrap Rukuc recording RedLight Rag in loving memory of
+            From the Rattletrap Rukuc recording RedLight Rag in loving memory of
             Mr. Lucas Hicks
           </p>
-        </div>
+        </Box>
 
-        <hr />
+        <Box my={4}>
+          <hr />
+        </Box>
 
-        <div>
-          <div>
+        <Box style={{ textAlign: "center" }}>
+          <Box>
             <iframe
               width="560"
               height="315"
@@ -137,10 +149,10 @@ export default function IndexPage() {
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-          </div>
-          <p>a live recording of the Blackberry Bushes</p>
-        </div>
-      </div>
+          </Box>
+          <p>A live recording of the Blackberry Bushes</p>
+        </Box>
+      </Box>
     </Layout>
   )
 }

@@ -16,6 +16,7 @@ const Link = ({ children, to, ...props }) => {
       >
         <Text
           fontSize={3}
+          // fontWeight="bold"
           style={{
             whiteSpace: "nowrap",
           }}

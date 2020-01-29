@@ -29,7 +29,9 @@ const Layout = ({ children }) => {
             <main>{children}</main>
 
             <footer>
-              <hr />
+              <Box my={4}>
+                <hr />
+              </Box>
               <Flex justifyContent="center">
                 © {new Date().getFullYear()}, Toolshed SoundLab
               </Flex>

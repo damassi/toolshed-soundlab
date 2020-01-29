@@ -21,7 +21,7 @@ const LutheriePage = _props => {
           <p>I first became interested in guitar making at the age of 16.</p>
           <p>
             Soon after I quit school and lucked into a job at Guild Guitars. (I
-            dated the owner’s grand-daughter in high school). Since 1975 I have
+            dated the owner’s grand-daughter in high school.) Since 1975 I have
             been building, repairing and restoring musical instruments of the
             fretted variety.
           </p>
