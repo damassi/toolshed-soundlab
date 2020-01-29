@@ -1,9 +1,9 @@
-
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Toolshed SoundLab`,
+    description: `Toolshed SoundLab Recording Studio - I offer music production &amp;amp; recording services at a comfortable studio in the heart of Port Townsend, near Seattle Washington`,
+    keywords: `port townsend,recording studio,washington,jefferson county,olympic peninsula,sequim,port angeles,analog,digital,tape transfer,music production,music studio,guitar lesson,luthier,guitar repair,Seattle,best,acoustic,folk,blues,jazz,rock,music production,voice over`,
+    author: `Christopher Pappas <damassi.pappas@gmail.com>`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

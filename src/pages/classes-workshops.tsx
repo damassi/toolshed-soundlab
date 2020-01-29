@@ -3,10 +3,12 @@ import Layout from "src/components/layout"
 import { Box, Flex } from "rebass"
 import { Spacer } from "src/components/Spacer"
 import { Link } from "gatsby"
+import { SEO } from "src/components/seo"
 
 const ClassesWorkshopsPage = _props => {
   return (
     <Layout>
+      <SEO title="Classes & Workshops" />
       <Flex justifyContent="center">
         <Flex flexDirection="column" width="100%" alignItems="center">
           <h1 style={{ textAlign: "center" }}>Classes & Workshops</h1>

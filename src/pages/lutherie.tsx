@@ -3,12 +3,14 @@ import Layout from "src/components/layout"
 import { Flex, Box } from "rebass"
 import { Link } from "gatsby"
 import { Spacer } from "src/components/Spacer"
+import { SEO } from "src/components/seo"
 
 const LutheriePage = _props => {
   return (
     <Layout>
+      <SEO title="Lutherie" />
       <Flex justifyContent="center">
-        <h1>Lutherie</h1>
+        <h1>Lutherie Services</h1>
       </Flex>
       <Box>
         <img src="images/lutherie/luthier-shop.jpg" />

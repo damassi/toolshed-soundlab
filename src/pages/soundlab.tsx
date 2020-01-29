@@ -4,17 +4,19 @@ import { Flex, Text, Box } from "rebass"
 import { Quote } from "src/components/Quote"
 import { Spacer } from "src/components/Spacer"
 import { Link } from "gatsby"
+import { SEO } from "src/components/seo"
 
 const SoundLabPage = _props => {
   return (
     <Layout>
-      <div style={{ textAlign: "center" }}>
+      <SEO title="SoundLab" />
+      <Box style={{ textAlign: "center" }}>
         <h1>Music Production & Recording at Toolshed SoundLab</h1>
         <h4>
           I offer music production & recording services at a comfortable studio
           in Port Townsend, WA.
         </h4>
-      </div>
+      </Box>
       <Flex>
         <img src="images/toolshed-360.jpg" />
       </Flex>

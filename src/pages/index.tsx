@@ -5,12 +5,15 @@ import { SubscribeForm } from "src/components/SubscribeForm"
 import { Link } from "gatsby"
 import { Spacer } from "src/components/Spacer"
 import { Quote } from "src/components/Quote"
+import { SEO } from "src/components/seo"
 
 // import SEO from "../components/seo"
 
 export default function IndexPage() {
   return (
     <Layout>
+      <SEO title="Home" />
+
       <div style={{ textAlign: "center" }}>
         <h1>Toolshed SoundLab</h1>
         <h4>
@@ -38,6 +41,10 @@ export default function IndexPage() {
           <Text fontSize={2}>- Toolshed Do-Right</Text>
         </Quote>
 
+        <Box my={4}>
+          <hr />
+        </Box>
+
         <Box>
           <Text color="#ffa70a" textAlign="center">
             <h4>
@@ -50,6 +57,10 @@ export default function IndexPage() {
           <Flex justifyContent="center">
             <SubscribeForm />
           </Flex>
+        </Box>
+
+        <Box my={4}>
+          <hr />
         </Box>
 
         <Spacer my={4} />

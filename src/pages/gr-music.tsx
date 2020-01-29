@@ -2,10 +2,12 @@ import React from "react"
 import Layout from "src/components/layout"
 import { Box, Flex, Text } from "rebass"
 import { Spacer } from "src/components/Spacer"
+import { SEO } from "src/components/seo"
 
 const GRMusicPage = _props => {
   return (
     <Layout>
+      <SEO title="George's Music" />
       <Box>
         <Flex justifyContent="center">
           <Box mr={2} width="40%">

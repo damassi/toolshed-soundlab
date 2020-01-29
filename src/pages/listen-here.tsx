@@ -1,10 +1,12 @@
 import React from "react"
 import Layout from "src/components/layout"
 import { Box, Flex, Text } from "rebass"
+import { SEO } from "src/components/seo"
 
 const ListenHerePage = _props => {
   return (
     <Layout>
+      <SEO title="Listen Here" />
       <Box style={{ textAlign: "center" }}>
         <h1>Toolshed SoundLab Productions - George Rezendes</h1>
         <h4>

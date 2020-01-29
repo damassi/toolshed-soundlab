@@ -16,7 +16,6 @@ const Link = ({ children, to, ...props }) => {
       >
         <Text
           fontSize={3}
-          // fontWeight="bold"
           style={{
             whiteSpace: "nowrap",
           }}
@@ -47,7 +46,7 @@ export default function Nav() {
         <Link to="/listen-here">Listen Here</Link>
         <Link to="/classes-workshops">Classes / Workshops</Link>
         <Link to="/gr-music">George R's Music</Link>
-        <Link to="/lutherie">Lutherie</Link>
+        <Link to="/lutherie">Lutherie Services</Link>
         <Link to="/contact">Contact</Link>
       </Flex>
     </nav>
