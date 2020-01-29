@@ -26,8 +26,8 @@ const GlobalStyle = createGlobalStyle`
 
   input {
     border: 0;
-    padding: 3px;
-    height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
     position: relative;
   }
 

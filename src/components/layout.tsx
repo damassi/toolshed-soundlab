@@ -32,8 +32,9 @@ const Layout = ({ children }) => {
               <Box my={4}>
                 <hr />
               </Box>
-              <Flex justifyContent="center">
-                © {new Date().getFullYear()}, Toolshed SoundLab
+              <Flex justifyContent="center" fontSize="1">
+                © {new Date().getFullYear()}, Toolshed SoundLab - Port Townsend,
+                WA
               </Flex>
             </footer>
           </Box>
