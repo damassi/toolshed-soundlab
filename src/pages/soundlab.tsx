@@ -28,11 +28,11 @@ const SoundLabPage = _props => {
         <ul>
           <li>
             16’ x 24’ live room with 16’ vaulted wood ceilings, radiant floor
-            heat and a hepa filtered ventilation system.
+            heat and a hepa filtered ventilation system
           </li>
           <li>
             12’ x 16’ control room equipped with Burl Audio B32 Summing amp /
-            B26 Monitor control & Mackie MCU.
+            B26 Monitor control & Mackie MCU
           </li>
           <li>
             Microphones: Pearlman, MBHO, Neaumann, B&0, Beyer, Sennheiser, Ear
@@ -40,15 +40,15 @@ const SoundLabPage = _props => {
           </li>
           <li>
             Preamps: Forssell, UA, Vintech, Grace, Langevin, Focusrite, Joe
-            Meek, Guido,
+            Meek, Guido
           </li>
           <li>
             Mac Pro, 16 gig ram, Logic 9 and 10, 16 channels of Lynx Aurora
-            conversion and UAD-2 plug-ins .
+            conversion and UAD-2 plug-ins
           </li>
-          <li>1885 Weber Piano - Brazilian Rosewood Upright Grand.</li>
+          <li>1885 Weber Piano - Brazilian Rosewood Upright Grand</li>
           <li>
-            1962 Hammond B3 with 122 Leslie - excellent original condition.
+            1962 Hammond B3 with 122 Leslie - excellent original condition
           </li>
           <li>Fender Rhodes Model Seventy-Three</li>
           <li>

@@ -32,17 +32,20 @@ export default function Nav() {
     <nav>
       <Box>
         <Link to="/">
-          <img
-            src="/images/home/logo.jpg"
-            width={150}
-            height={150}
-            style={{ border: 0 }}
-          />
+          <Box>
+            <img
+              src="/images/home/logo.jpg"
+              width={150}
+              height={150}
+              style={{ border: 0, position: "relative", left: "-4px" }}
+            />
+          </Box>
         </Link>
       </Box>
+
       <Flex flexDirection="column" justifyContent="center">
         <Link to="/">Home</Link>
-        <Link to="/soundlab">SoundLab</Link>
+        <Link to="/soundlab">Recording Studio</Link>
         <Link to="/listen-here">Listen Here</Link>
         <Link to="/classes-workshops">Classes / Workshops</Link>
         <Link to="/gr-music">George R's Music</Link>

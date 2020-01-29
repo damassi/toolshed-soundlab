@@ -24,13 +24,19 @@ export default function IndexPage() {
         <Box>
           <Flex justifyContent="space-between">
             <Link to="/soundlab">
-              <img src="/images/home/studio.jpg" height={250} />
+              <Box height={250}>
+                <img src="/images/home/studio.jpg" style={{ maxHeight: 250 }} />
+              </Box>
             </Link>
-            <Link to="/">
-              <img src="/images/home/logo.jpg" />
+            <Link to="/listen-here">
+              <Box>
+                <img src="/images/home/logo.jpg" />
+              </Box>
             </Link>
             <Link to="/gr-music">
-              <img src="/images/home/george.png" height={250} />
+              <Box height={250}>
+                <img src="/images/home/george.png" style={{ maxHeight: 250 }} />
+              </Box>
             </Link>
           </Flex>
         </Box>
@@ -132,7 +138,7 @@ export default function IndexPage() {
         <Box style={{ textAlign: "center" }}>
           <Box>
             <iframe
-              width="560"
+              width="80%"
               height="315"
               src="https://www.youtube.com/embed/XY5de425CLg"
               frameBorder="0"
@@ -153,7 +159,7 @@ export default function IndexPage() {
         <Box style={{ textAlign: "center" }}>
           <Box>
             <iframe
-              width="560"
+              width="80%"
               height="315"
               src="https://www.youtube.com/embed/9VdG1oicOBA"
               frameBorder="0"

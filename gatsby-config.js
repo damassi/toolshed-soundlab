@@ -35,11 +35,5 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: "gatsby-plugin-extract-schema",
-      options: {
-        dest: `${__dirname}/data/schema.json`,
-      },
-    },
   ],
 }

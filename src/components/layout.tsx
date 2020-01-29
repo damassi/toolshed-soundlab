@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
         my={4}
       >
         <Flex>
-          <Box width={250} style={{ position: "fixed" }}>
+          <Box width={[150, 250]} style={{ position: "fixed" }}>
             <Nav />
           </Box>
 
