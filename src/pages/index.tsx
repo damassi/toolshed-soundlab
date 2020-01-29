@@ -4,9 +4,8 @@ import { Flex, Text, Box } from "rebass"
 import { SubscribeForm } from "src/components/SubscribeForm"
 import { Link } from "gatsby"
 import { Spacer } from "src/components/Spacer"
+import { Quote } from "src/components/Quote"
 
-// import Layout from "../components/layout"
-// import Image from "../components/image"
 // import SEO from "../components/seo"
 
 export default function IndexPage() {
@@ -31,18 +30,11 @@ export default function IndexPage() {
           </Link>
         </Flex>
 
-        <p>
-          <Box p={2}>
-            <Text
-              style={{ fontStyle: "italic", textAlign: "center" }}
-              fontSize={3}
-            >
-              "Music is the most fun you can have without gettin’ into trouble"{" "}
-              <br />
-              <Text fontSize={2}>- Toolshed Do-Right</Text>
-            </Text>
-          </Box>
-        </p>
+        <Quote>
+          "Music is the most fun you can have without gettin’ into trouble"{" "}
+          <br />
+          <Text fontSize={2}>- Toolshed Do-Right</Text>
+        </Quote>
 
         <Box>
           <Text color="#ffa70a" textAlign="center">

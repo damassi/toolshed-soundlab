@@ -27,13 +27,15 @@ const Layout = ({ children }) => {
             }}
           >
             <main>{children}</main>
+
+            <footer>
+              <hr />
+              <Flex justifyContent="center">
+                © {new Date().getFullYear()}, Toolshed SoundLab
+              </Flex>
+            </footer>
           </Box>
         </Flex>
-        <footer>
-          <Flex justifyContent="center">
-            © {new Date().getFullYear()}, Toolshed SoundLab
-          </Flex>
-        </footer>
       </Flex>
     </>
   )
