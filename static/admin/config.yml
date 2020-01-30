@@ -12,12 +12,51 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
+  - name: home
+    label: Home
+    folder: content
     create: true
     fields:
       - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+
+  - name: recording-studio
+    label: Recording Studio
+    folder: content
+    create: true
+    fields:
+      - { name: path, label: Path }
+
+  - name: listen-here
+    label: Listen Here
+    folder: content
+    create: true
+    fields:
+      - { name: path, label: Path }
+
+  - name: classes-workshops
+    label: Classes Workshops
+    folder: content
+    create: true
+    fields:
+      - { name: path, label: Path }
+
+  - name: george
+    label: George R's Music
+    folder: content
+    create: true
+    fields:
+      - { name: path, label: Path }
+
+  - name: lutherie-services
+    label: Lutherie Services
+    folder: content
+    create: true
+    fields:
+      - { name: path, label: Path }
+
+  - name: contact
+    label: Contact
+    folder: content
+    create: true
+    fields:
+      - { name: path, label: Path }

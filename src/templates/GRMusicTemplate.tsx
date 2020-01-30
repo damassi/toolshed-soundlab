@@ -14,10 +14,10 @@ export const GRMusicTemplate = _props => {
               </h2>
               <h4>country blues, ragtime, folk and roots-rock</h4>
             </Box>
-            <img src="images/gr-music/first-strat-67.jpg" />
+            <img src="/images/gr-music/first-strat-67.jpg" />
           </Box>
           <Box>
-            <img src="images/gr-music/george.jpg" />
+            <img src="/images/gr-music/george.jpg" />
           </Box>
         </Flex>
       </Box>
@@ -81,7 +81,7 @@ export const GRMusicTemplate = _props => {
         <Flex>
           <Flex width="33%" flexDirection="column" alignItems="center">
             <Box>
-              <img src="images/gr-music/george-john.jpg" />
+              <img src="/images/gr-music/george-john.jpg" />
             </Box>
             <Text fontSize={1} lineHeight={1.5} textAlign="center">
               George with John Jackson and Mick Knight
@@ -90,7 +90,7 @@ export const GRMusicTemplate = _props => {
 
           <Flex width="33%" flexDirection="column" alignItems="center">
             <Box>
-              <img src="images/gr-music/george-felix.jpg" />
+              <img src="/images/gr-music/george-felix.jpg" />
             </Box>
             <Text fontSize={1} lineHeight={1.5} textAlign="center">
               George & ‘felix’ at Nino Fazio’s in Messina, Italy
@@ -99,7 +99,7 @@ export const GRMusicTemplate = _props => {
 
           <Flex width="33%" flexDirection="column" alignItems="center">
             <Box>
-              <img src="images/gr-music/toolshed-trio.jpg" />
+              <img src="/images/gr-music/toolshed-trio.jpg" />
             </Box>
             <Text fontSize={1} lineHeight={1.5} textAlign="center">
               The original Toolshed Trio (it never had only 3 members) Sam

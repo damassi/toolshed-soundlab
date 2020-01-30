@@ -14,7 +14,7 @@ export const SoundLabTemplate = _props => {
         </h4>
       </Box>
       <Flex>
-        <img src="images/toolshed-360.jpg" />
+        <img src="/images/toolshed-360.jpg" />
       </Flex>
 
       <Spacer mb={4} />
@@ -80,7 +80,7 @@ export const SoundLabTemplate = _props => {
         <Flex justifyContent="center">
           <Flex flexDirection="column" width="40%">
             <Box>
-              <img src="images/soundlab/george-owner.jpg" height={200} />
+              <img src="/images/soundlab/george-owner.jpg" height={200} />
             </Box>
             <Text textAlign="center" fontSize={2}>
               George Rezendes owner, engineer, producer, musician
@@ -89,7 +89,7 @@ export const SoundLabTemplate = _props => {
           <Spacer mx={4} />
           <Flex flexDirection="column" width="40%">
             <Box>
-              <img src="images/soundlab/cj.jpg" width="auto" height={200} />
+              <img src="/images/soundlab/cj.jpg" width="auto" height={200} />
             </Box>
             <Text textAlign="center" fontSize={2}>
               Camelia Jade ( CJ ) Lazenby recording and mastering engineer,
@@ -103,15 +103,15 @@ export const SoundLabTemplate = _props => {
         <Spacer my={4} />
 
         <Flex justifyContent="space-between">
-          <img src="images/soundlab/studio-1.jpg" width="49%" />
-          <img src="images/soundlab/studio-2.jpg" width="49%" />
+          <img src="/images/soundlab/studio-1.jpg" width="49%" />
+          <img src="/images/soundlab/studio-2.jpg" width="49%" />
         </Flex>
 
         <Spacer my={4} />
 
         <Flex justifyContent="center">
           <Box>
-            <img src="images/soundlab/control-room.jpg" />
+            <img src="/images/soundlab/control-room.jpg" />
           </Box>
         </Flex>
 
@@ -144,7 +144,7 @@ export const SoundLabTemplate = _props => {
         <Flex justifyContent="center">
           <Flex justifyContent="center" flexDirection="column" width="50%">
             <Box>
-              <img src="images/soundlab/ceiling.jpg" />
+              <img src="/images/soundlab/ceiling.jpg" />
             </Box>
             <Box>
               The ceiling for the studio control room was built by Niels Holm
