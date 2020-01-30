@@ -224,7 +224,7 @@ export const ListenHereTemplate = _props => {
         <Flex flexWrap="wrap">
           <Flex width="33%" flexDirection="column" alignItems="center">
             <Box>
-              <img src="/images/listen-here/dudu-mala.jpg" />
+              <img src="/assets/images/listen-here/dudu-mala.jpg" />
             </Box>
             <Text fontSize={1} lineHeight={1.5} textAlign="center">
               Dudu Maia & Douglas Loura Vibrações
@@ -233,7 +233,7 @@ export const ListenHereTemplate = _props => {
 
           <Flex width="33%" flexDirection="column" alignItems="center">
             <Box>
-              <img src="/images/listen-here/stubby.jpg" />
+              <img src="/assets/images/listen-here/stubby.jpg" />
             </Box>
             <Text fontSize={1} lineHeight={1.5} textAlign="center">
               Stubby & the Electric Blanket on and on and on
@@ -242,7 +242,7 @@ export const ListenHereTemplate = _props => {
 
           <Flex width="33%" flexDirection="column" alignItems="center">
             <Box>
-              <img src="/images/listen-here/sam.jpg" />
+              <img src="/assets/images/listen-here/sam.jpg" />
             </Box>
             <Text fontSize={1} lineHeight={1.5} textAlign="center">
               Sam Doores Farmland Blues
@@ -251,7 +251,7 @@ export const ListenHereTemplate = _props => {
 
           <Flex width="33%" flexDirection="column" alignItems="center">
             <Box>
-              <img src="/images/listen-here/kate.jpg" />
+              <img src="/assets/images/listen-here/kate.jpg" />
             </Box>
             <Text fontSize={1} lineHeight={1.5} textAlign="center">
               Kate Long & Robin Kessinger Red Rockin’ Chair Live at Toolshed
@@ -261,7 +261,7 @@ export const ListenHereTemplate = _props => {
 
           <Flex width="33%" flexDirection="column" alignItems="center">
             <Box>
-              <img src="/images/listen-here/gallus.jpg" />
+              <img src="/assets/images/listen-here/gallus.jpg" />
             </Box>
             <Text fontSize={1} lineHeight={1.5} textAlign="center">
               Gallus Bros. Instrumental
@@ -270,7 +270,7 @@ export const ListenHereTemplate = _props => {
 
           <Flex width="33%" flexDirection="column" alignItems="center">
             <Box>
-              <img src="/images/listen-here/paul.jpg" />
+              <img src="/assets/images/listen-here/paul.jpg" />
             </Box>
             <Text fontSize={1} lineHeight={1.5} textAlign="center">
               Paul Chasman / Last of Us Soundtrack
@@ -279,7 +279,7 @@ export const ListenHereTemplate = _props => {
 
           <Flex width="33%" flexDirection="column" alignItems="center">
             <Box>
-              <img src="/images/listen-here/usana.jpg" />
+              <img src="/assets/images/listen-here/usana.jpg" />
             </Box>
             <Text fontSize={1} lineHeight={1.5} textAlign="center">
               Usana Great Day
@@ -288,7 +288,7 @@ export const ListenHereTemplate = _props => {
 
           <Flex width="33%" flexDirection="column" alignItems="center">
             <Box>
-              <img src="/images/listen-here/crow.jpg" />
+              <img src="/assets/images/listen-here/crow.jpg" />
             </Box>
             <Text fontSize={1} lineHeight={1.5} textAlign="center">
               Crow Quill Night Owls Wake Up Sinners
@@ -297,7 +297,7 @@ export const ListenHereTemplate = _props => {
 
           <Flex width="33%" flexDirection="column" alignItems="center">
             <Box>
-              <img src="/images/listen-here/gallus-2.jpg" />
+              <img src="/assets/images/listen-here/gallus-2.jpg" />
             </Box>
             <Text fontSize={1} lineHeight={1.5} textAlign="center">
               Gallus Bros, mighty good leader
@@ -306,7 +306,7 @@ export const ListenHereTemplate = _props => {
 
           <Flex width="33%" flexDirection="column" alignItems="center">
             <Box>
-              <img src="/images/listen-here/inkwell.jpg" />
+              <img src="/assets/images/listen-here/inkwell.jpg" />
             </Box>
             <Text fontSize={1} lineHeight={1.5} textAlign="center">
               Inkwell Rhythm Makers Oh Mama
@@ -315,7 +315,7 @@ export const ListenHereTemplate = _props => {
 
           <Flex width="33%" flexDirection="column" alignItems="center">
             <Box>
-              <img src="/images/listen-here/below.jpg" />
+              <img src="/assets/images/listen-here/below.jpg" />
             </Box>
             <Text fontSize={1} lineHeight={1.5} textAlign="center">
               Below the Salt Alliswinigitator
@@ -324,7 +324,7 @@ export const ListenHereTemplate = _props => {
 
           <Flex width="33%" flexDirection="column" alignItems="center">
             <Box>
-              <img src="/images/listen-here/black.jpg" />
+              <img src="/assets/images/listen-here/black.jpg" />
             </Box>
             <Text fontSize={1} lineHeight={1.5} textAlign="center">
               Black Resonators So Nice

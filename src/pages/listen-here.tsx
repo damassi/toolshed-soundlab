@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "src/components/layout"
 import { SEO } from "src/components/seo"
-import { ListenHereTemplate } from "src/templates/ListenHereTemplate"
+import { ListenHereTemplate } from "src/templates/listen-here"
 
 const ListenHerePage = _props => {
   return (

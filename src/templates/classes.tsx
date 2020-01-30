@@ -10,7 +10,7 @@ export const ClassesWorkshopsTemplate = _props => {
           <h1 style={{ textAlign: "center" }}>Classes & Workshops</h1>
 
           <Box>
-            <img src="/images/classes-workshops/soundlab-banner.jpg" />
+            <img src="/assets/images/classes-workshops/soundlab-banner.jpg" />
           </Box>
         </Flex>
       </Flex>

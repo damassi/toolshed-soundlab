@@ -2,13 +2,13 @@ import CMS from "netlify-cms-app"
 import FileSystemBackend from "netlify-cms-backend-fs"
 import { injectStyles } from "./injectStyles"
 
-import { HomeTemplate } from "src/templates/HomeTemplate"
-import { SoundLabTemplate } from "src/templates/SoundLabTemplate"
-import { ListenHereTemplate } from "src/templates/ListenHereTemplate"
-import { ClassesWorkshopsTemplate } from "src/templates/ClassesWorkshopsTemplate"
-import { GRMusicTemplate } from "src/templates/GRMusicTemplate"
-import { LutherieTemplate } from "src/templates/LutherieTemplate"
-import { ContactTemplate } from "src/templates/ContactTemplate"
+import { HomeTemplate } from "src/templates/home"
+import { SoundLabTemplate } from "src/templates/studio"
+import { ListenHereTemplate } from "src/templates/listen-here"
+import { ClassesWorkshopsTemplate } from "src/templates/classes"
+import { GRMusicTemplate } from "src/templates/gr-music"
+import { LutherieTemplate } from "src/templates/lutherie"
+import { ContactTemplate } from "src/templates/contact"
 
 CMS.registerPreviewTemplate("home", injectStyles(HomeTemplate))
 CMS.registerPreviewTemplate("recording-studio", injectStyles(SoundLabTemplate))

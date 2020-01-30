@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "src/components/layout"
 import { SEO } from "src/components/seo"
-import { SoundLabTemplate } from "src/templates/SoundLabTemplate"
+import { SoundLabTemplate } from "src/templates/studio"
 
 const SoundLabPage = _props => {
   return (

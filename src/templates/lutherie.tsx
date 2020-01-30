@@ -9,7 +9,7 @@ export const LutherieTemplate = _props => {
         <h1>Lutherie Services</h1>
       </Flex>
       <Box>
-        <img src="/images/lutherie/luthier-shop.jpg" />
+        <img src="/assets/images/lutherie/luthier-shop.jpg" />
       </Box>
 
       <Spacer my={4} />
@@ -38,10 +38,10 @@ export const LutherieTemplate = _props => {
           </p>
           <Flex>
             <Box width="40%">
-              <img src="/images/lutherie/luthererie-1.jpg" />
+              <img src="/assets/images/lutherie/luthererie-1.jpg" />
             </Box>
             <Box>
-              <img src="/images/lutherie/reso-buzz.jpg" />
+              <img src="/assets/images/lutherie/reso-buzz.jpg" />
             </Box>
           </Flex>
 
@@ -57,7 +57,10 @@ export const LutherieTemplate = _props => {
               </h4>
             </Box>
             <Box width="100%">
-              <img src="/images/lutherie/martin-repair.jpg" width="100%" />
+              <img
+                src="/assets/images/lutherie/martin-repair.jpg"
+                width="100%"
+              />
             </Box>
           </Box>
 
@@ -67,7 +70,7 @@ export const LutherieTemplate = _props => {
             <Box mb={4}>
               <h4>Fully restored Gibson:</h4>
             </Box>
-            <img src="/images/lutherie/gibson-1.jpg" width="100%" />
+            <img src="/assets/images/lutherie/gibson-1.jpg" width="100%" />
           </Box>
         </Box>
       </Box>
