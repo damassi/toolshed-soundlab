@@ -1,6 +1,6 @@
 import React from "react"
 import { Link as BaseLink } from "gatsby"
-import { Flex, Box, Text } from "rebass"
+import { Flex, Box, Text } from "rebass/styled-components"
 
 const Link = ({ children, to, ...props }) => {
   return (
@@ -34,7 +34,7 @@ export default function Nav() {
         <Link to="/">
           <Box>
             <img
-              src="/images/home/logo.jpg"
+              src="/assets/images/home/logo.jpg"
               width={150}
               height={150}
               style={{ border: 0, position: "relative", left: "-4px" }}

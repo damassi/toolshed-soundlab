@@ -1,7 +1,7 @@
 import React from "react"
 import MailchimpSubscribe from "react-mailchimp-subscribe"
 import styled from "styled-components"
-import { Box } from "rebass"
+import { Box } from "rebass/styled-components"
 
 const url = "//xxxx.us13.list-manage.com/subscribe/post?u=zefzefzef&id=fnfgn"
 

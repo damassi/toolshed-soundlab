@@ -1,7 +1,16 @@
+# Netlify "kitchen sink" example: https://github.com/netlify/netlify-cms/blob/master/dev-test/config.yml
+
+localhost_development:
+  backend:
+    name: file-system
+    api_root: /api
+
 backend:
   name: test-repo
+
 media_folder: static/assets
 public_folder: assets
+
 collections:
   - name: blog
     label: Blog
