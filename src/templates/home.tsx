@@ -4,12 +4,12 @@ import { SubscribeForm } from "src/components/SubscribeForm"
 import { Spacer } from "src/components/Spacer"
 import { Quote } from "src/components/Quote"
 
-export const HomeTemplate = _props => {
+export const HomeTemplate = props => {
   // console.log(_props)
   return (
     <Box>
       <Box style={{ textAlign: "center" }}>
-        <h1>Toolshed SoundLab</h1>
+        <h1>{props.frontmatter.title}</h1>
         <h4>
           A comfortable, relaxed recording studio in the heart of Port Townsend
         </h4>

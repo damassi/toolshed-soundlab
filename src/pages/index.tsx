@@ -10,7 +10,7 @@ export default function IndexPage(props) {
   return (
     <Layout>
       <SEO title="Home" />
-      <HomeTemplate {...props} />
+      <HomeTemplate {...props.data.markdownRemark} />
     </Layout>
   )
 }

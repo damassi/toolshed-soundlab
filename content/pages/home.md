@@ -1,5 +1,5 @@
 ---
 templateKey: home
-title: "Home"
+title: "Toolshed SoundLab"
 page: true
 ---
