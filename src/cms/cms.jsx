@@ -1,6 +1,6 @@
 import CMS from "netlify-cms-app"
 import FileSystemBackend from "netlify-cms-backend-fs"
-import { ClassesWorkshopsTemplate } from "src/templates/classes-workshops"
+import { ClassesWorkshopsTemplate } from "src/templates/ClassesWorkshopsTemplate"
 import { injectStyles } from "./injectStyles"
 
 CMS.registerPreviewTemplate("blog", injectStyles(ClassesWorkshopsTemplate))

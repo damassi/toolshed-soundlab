@@ -1,14 +1,10 @@
 import React from "react"
-import Layout from "src/components/layout"
 import { Flex, Box } from "rebass/styled-components"
-import { Link } from "gatsby"
 import { Spacer } from "src/components/Spacer"
-import { SEO } from "src/components/seo"
 
-const LutheriePage = _props => {
+export const LutherieTemplate = _props => {
   return (
-    <Layout>
-      <SEO title="Lutherie" />
+    <Box>
       <Flex justifyContent="center">
         <h1>Lutherie Services</h1>
       </Flex>
@@ -34,7 +30,7 @@ const LutheriePage = _props => {
           </p>
           <p>
             Call me at 360-385-1471 to set an appointment, or send a message via
-            the <Link to="/contact">Contact Form</Link>.
+            the <a href="/contact">Contact Form</a>.
           </p>
           <p>
             If your instrument is hard to play, it needs help. I can adjust it
@@ -75,8 +71,6 @@ const LutheriePage = _props => {
           </Box>
         </Box>
       </Box>
-    </Layout>
+    </Box>
   )
 }
-
-export default LutheriePage

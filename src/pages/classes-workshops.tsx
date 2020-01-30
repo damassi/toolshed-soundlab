@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "src/components/layout"
 import { SEO } from "src/components/seo"
-import { ClassesWorkshopsTemplate } from "src/templates/classes-workshops"
+import { ClassesWorkshopsTemplate } from "src/templates/ClassesWorkshopsTemplate"
 
 const ClassesWorkshopsPage = _props => {
   return (

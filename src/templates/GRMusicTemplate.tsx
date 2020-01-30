@@ -1,13 +1,10 @@
 import React from "react"
-import Layout from "src/components/layout"
 import { Box, Flex, Text } from "rebass/styled-components"
 import { Spacer } from "src/components/Spacer"
-import { SEO } from "src/components/seo"
 
-const GRMusicPage = _props => {
+export const GRMusicTemplate = _props => {
   return (
-    <Layout>
-      <SEO title="George's Music" />
+    <Box>
       <Box>
         <Flex justifyContent="center">
           <Box mr={2} width="40%">
@@ -111,8 +108,6 @@ const GRMusicPage = _props => {
           </Flex>
         </Flex>
       </Box>
-    </Layout>
+    </Box>
   )
 }
-
-export default GRMusicPage

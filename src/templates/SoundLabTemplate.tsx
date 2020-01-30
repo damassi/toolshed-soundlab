@@ -1,15 +1,11 @@
 import React from "react"
-import Layout from "src/components/layout"
 import { Flex, Text, Box } from "rebass/styled-components"
 import { Quote } from "src/components/Quote"
 import { Spacer } from "src/components/Spacer"
-import { Link } from "gatsby"
-import { SEO } from "src/components/seo"
 
-const SoundLabPage = _props => {
+export const SoundLabTemplate = _props => {
   return (
-    <Layout>
-      <SEO title="SoundLab" />
+    <Box>
       <Box style={{ textAlign: "center" }}>
         <h1>Music Production & Recording at Toolshed SoundLab</h1>
         <h4>
@@ -139,7 +135,7 @@ const SoundLabPage = _props => {
             If you are interested in having me produce and/or record your
             project please contact me for details. I am always happy to discuss
             pre-production needs and concerns.
-            <Link to="/contact">Contact me</Link>
+            <a href="/contact">Contact me</a>
           </p>
         </Box>
 
@@ -271,8 +267,6 @@ const SoundLabPage = _props => {
           </Flex>
         </Box>
       </Box>
-    </Layout>
+    </Box>
   )
 }
-
-export default SoundLabPage

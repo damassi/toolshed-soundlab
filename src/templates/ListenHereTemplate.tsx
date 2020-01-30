@@ -1,12 +1,9 @@
 import React from "react"
-import Layout from "src/components/layout"
 import { Box, Flex, Text } from "rebass/styled-components"
-import { SEO } from "src/components/seo"
 
-const ListenHerePage = _props => {
+export const ListenHereTemplate = _props => {
   return (
-    <Layout>
-      <SEO title="Listen Here" />
+    <Box>
       <Box style={{ textAlign: "center" }}>
         <h1>Toolshed SoundLab Productions - George Rezendes</h1>
         <h4>
@@ -335,8 +332,6 @@ const ListenHerePage = _props => {
           </Flex>
         </Flex>
       </Box>
-    </Layout>
+    </Box>
   )
 }
-
-export default ListenHerePage

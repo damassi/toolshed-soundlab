@@ -1,47 +1,42 @@
 import React from "react"
-import Layout from "src/components/layout"
 import { Flex, Text, Box } from "rebass/styled-components"
 import { SubscribeForm } from "src/components/SubscribeForm"
-import { Link } from "gatsby"
 import { Spacer } from "src/components/Spacer"
 import { Quote } from "src/components/Quote"
-import { SEO } from "src/components/seo"
 
-export default function IndexPage() {
+export const HomeTemplate = _props => {
   return (
-    <Layout>
-      <SEO title="Home" />
-
-      <div style={{ textAlign: "center" }}>
+    <Box>
+      <Box style={{ textAlign: "center" }}>
         <h1>Toolshed SoundLab</h1>
         <h4>
           A comfortable, relaxed recording studio in the heart of Port Townsend
         </h4>
-      </div>
+      </Box>
       <Box>
         <Box>
           <Flex justifyContent="space-between">
-            <Link to="/soundlab">
+            <a href="/soundlab">
               <Box height={250}>
                 <img
                   src="/assets/images/home/studio.jpg"
                   style={{ maxHeight: 250 }}
                 />
               </Box>
-            </Link>
-            <Link to="/listen-here">
+            </a>
+            <a href="/listen-here">
               <Box>
                 <img src="/assets/images/home/logo.jpg" />
               </Box>
-            </Link>
-            <Link to="/gr-music">
+            </a>
+            <a href="/gr-music">
               <Box height={250}>
                 <img
                   src="/assets/images/home/george.png"
                   style={{ maxHeight: 250 }}
                 />
               </Box>
-            </Link>
+            </a>
           </Flex>
         </Box>
 
@@ -174,6 +169,6 @@ export default function IndexPage() {
           <p>A live recording of the Blackberry Bushes</p>
         </Box>
       </Box>
-    </Layout>
+    </Box>
   )
 }
