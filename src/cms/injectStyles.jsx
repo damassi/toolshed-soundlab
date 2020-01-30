@@ -22,18 +22,24 @@ function StyleInjector({ children }) {
 }
 
 export function injectStyles(Comp) {
-  return props => (
-    <StyleInjector>
-      <Box
-        id="hello"
-        p={4}
-        backgroundColor="#693807"
-        style={{
-          borderRadius: 4,
-        }}
-      >
-        <Comp {...props} />
-      </Box>
-    </StyleInjector>
-  )
+  return props => {
+    const data = {
+      frontmatter: props.entry.getIn(["data"]).toJS(),
+    }
+
+    return (
+      <StyleInjector>
+        <Box
+          id="hello"
+          p={4}
+          backgroundColor="#693807"
+          style={{
+            borderRadius: 4,
+          }}
+        >
+          <Comp {...data} />
+        </Box>
+      </StyleInjector>
+    )
+  }
 }

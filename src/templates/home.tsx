@@ -5,6 +5,7 @@ import { Spacer } from "src/components/Spacer"
 import { Quote } from "src/components/Quote"
 
 export const HomeTemplate = _props => {
+  // console.log(_props)
   return (
     <Box>
       <Box style={{ textAlign: "center" }}>

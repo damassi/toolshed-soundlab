@@ -17,14 +17,14 @@ collections:
     folder: content
     create: true
     fields:
-      - { name: path, label: Path }
+      - { name: title, label: Title }
 
   - name: recording-studio
     label: Recording Studio
     folder: content
     create: true
     fields:
-      - { name: path, label: Path }
+      - { name: title, label: Title }
 
   - name: listen-here
     label: Listen Here
