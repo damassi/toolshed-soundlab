@@ -4,11 +4,11 @@ import { SEO } from "src/components/seo"
 import { StudioTemplate } from "src/templates/studio"
 import { graphql } from "gatsby"
 
-const StudioPage = _props => {
+const StudioPage = props => {
   return (
     <Layout>
       <SEO title="Recording Studio" />
-      <StudioTemplate />
+      <StudioTemplate {...props.data.markdownRemark} />
     </Layout>
   )
 }
@@ -20,7 +20,12 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: "/studio/" } }) {
       frontmatter {
         title
-        templateKey
+        subTitle
+        mainImage
+        features
+        testimonial
+        moreInfo
+        artists
       }
     }
   }

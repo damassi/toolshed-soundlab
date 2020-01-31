@@ -4,11 +4,11 @@ import { SEO } from "src/components/seo"
 import { ListenHereTemplate } from "src/templates/listen-here"
 import { graphql } from "gatsby"
 
-const ListenHerePage = _props => {
+const ListenHerePage = props => {
   return (
     <Layout>
       <SEO title="Listen Here" />
-      <ListenHereTemplate />
+      <ListenHereTemplate {...props.data.markdownRemark} />
     </Layout>
   )
 }

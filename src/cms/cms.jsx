@@ -14,8 +14,8 @@ CMS.registerPreviewTemplate("home", injectStyles(HomeTemplate))
 CMS.registerPreviewTemplate("studio", injectStyles(StudioTemplate))
 CMS.registerPreviewTemplate("listen-here", injectStyles(ListenHereTemplate))
 CMS.registerPreviewTemplate("classes", injectStyles(ClassesWorkshopsTemplate))
-CMS.registerPreviewTemplate("george", injectStyles(GRMusicTemplate))
-CMS.registerPreviewTemplate("lutherie-services", injectStyles(LutherieTemplate))
+CMS.registerPreviewTemplate("gr-music", injectStyles(GRMusicTemplate))
+CMS.registerPreviewTemplate("lutherie", injectStyles(LutherieTemplate))
 CMS.registerPreviewTemplate("contact", injectStyles(ContactTemplate))
 
 if (process.env.NODE_ENV === "development") {

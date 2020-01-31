@@ -51,6 +51,12 @@ collections:
         label: "Studio"
         fields:
           - { name: title, label: Title }
+          - { name: subTitle, label: Sub Title }
+          - { name: mainImage, label: Main Image, widget: image }
+          - { name: features, label: Features, widget: markdown }
+          - { name: testimonial, label: Testimonial, widget: text }
+          - { name: moreInfo, label: More Info, widget: markdown }
+          - { name: artists, label: Artists, widget: markdown }
           - { name: templateKey, label: "Template Key", default: "studio" }
 
       - file: "content/pages/listen-here.md"
@@ -58,6 +64,22 @@ collections:
         label: "Listen Here"
         fields:
           - { name: title, label: Title }
+          - { name: subTitle, label: Sub Title }
+          - {
+              name: recordings,
+              label: Recordings,
+              widget: list,
+              fields:
+                [
+                  {
+                    name: description,
+                    label: Description,
+                    widget: markdown,
+                    required: false,
+                  },
+                  { name: embed, label: Embed },
+                ],
+            }
           - { name: templateKey, label: "Template Key", default: "listen-here" }
 
       - file: "content/pages/classes.md"
@@ -65,13 +87,14 @@ collections:
         label: "Classes & Workshops"
         fields:
           - { name: title, label: Title }
+          - { name: content, label: Content, widget: markdown }
           - { name: templateKey, label: "Template Key", default: "classes" }
 
       - file: "content/pages/gr-music.md"
         name: "gr-music"
         label: "George R's Music"
         fields:
-          - { name: title, label: Title }
+          - { name: content, label: Content, widget: markdown }
           - { name: templateKey, label: "Template Key", default: "gr-music" }
 
       - file: "content/pages/lutherie.md"
@@ -79,6 +102,7 @@ collections:
         name: "lutherie"
         fields:
           - { name: title, label: Title }
+          - { name: content, label: Content, widget: markdown }
           - { name: templateKey, label: "Template Key", default: "lutherie" }
 
       - file: "content/pages/contact.md"

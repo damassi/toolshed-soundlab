@@ -4,11 +4,11 @@ import { SEO } from "src/components/seo"
 import { LutherieTemplate } from "src/templates/lutherie"
 import { graphql } from "gatsby"
 
-const LutheriePage = _props => {
+const LutheriePage = props => {
   return (
     <Layout>
       <SEO title="Lutherie" />
-      <LutherieTemplate />
+      <LutherieTemplate {...props.data.markdownRemark} />
     </Layout>
   )
 }
@@ -20,7 +20,7 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: "/lutherie/" } }) {
       frontmatter {
         title
-        templateKey
+        content
       }
     }
   }

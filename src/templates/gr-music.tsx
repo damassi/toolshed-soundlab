@@ -1,8 +1,13 @@
 import React from "react"
+import ReactMarkdown from "react-markdown"
 import { Box, Flex, Text } from "rebass/styled-components"
 import { Spacer } from "src/components/Spacer"
 
-export const GRMusicTemplate = _props => {
+export const GRMusicTemplate = props => {
+  const {
+    frontmatter: { content },
+  } = props
+
   return (
     <Box>
       <Box>
@@ -25,54 +30,7 @@ export const GRMusicTemplate = _props => {
       <Spacer my={4} />
 
       <Box>
-        <Box>
-          A few tunes I’ve recorded over the years, solo and with various
-          projects - I hope you enjoy them. The last recorded toolshed trio
-          project, “better late than never” features: Brett Pemberton - drums,
-          Kurt Jensen - bass, Dave Meis - steel guitar, Jon Parry - fiddle
-        </Box>
-
-        <Box my={4}>
-          <hr />
-        </Box>
-
-        <ul>
-          <li>
-            <strong>Play</strong> * west coast blues - my first and favorite rag
-            by Blind Blake
-          </li>
-          <li>
-            <strong>Play</strong> * viper - my version of a 1936 Stuff Smith
-            tune about... stuff
-          </li>
-          <li>
-            <strong>Play</strong> * take me to land of jazz - cool tune with
-            great story-time lyrics
-          </li>
-          <li>
-            <strong>Play</strong> * miss delta - a tune I learned from Mary
-            Flower at blues camp one summer
-          </li>
-          <li>
-            <strong>Play</strong> * harlem nocturne - from the last toolshed
-            trio recording, ‘better late than never”
-          </li>
-          <li>
-            <strong>Play</strong> * working man can’t get nowhere today -
-            “better late than never”
-          </li>
-          <li>
-            <strong>Play</strong> * memphis in the meantime - “better late than
-            never”
-          </li>
-          <li>
-            <strong>Play</strong> * it takes a lot to laugh... - “better late
-            than never”
-          </li>
-          <li>
-            <strong>Play</strong> * day tripper - “better late than never”
-          </li>
-        </ul>
+        <ReactMarkdown source={content} />
 
         <Box my={4}>
           <hr />
