@@ -40,7 +40,7 @@ audioCallOut:
       Lucas Hicks"
     embed: >-
       <iframe width="80%" height="315"
-      src="https://www.youtube.com/embed/XY5de425CLg"              
+      src="https://www.youtube.com/embed/XY5de425CLg"
       frameBorder="0"               allow="accelerometer; autoplay;
       encrypted-media; gyroscope; picture-in-picture"  allowFullScreen></iframe>
   - description: A live recording of the Blackberry Bushes
@@ -48,5 +48,5 @@ audioCallOut:
       ' <iframe               width="80%"               height="315"               src="https://www.youtube.com/embed/9VdG1oicOBA"               frameBorder="0"               allow="accelerometer;
       autoplay; encrypted-media; gyroscope;
       picture-in-picture"               allowFullScreen             ></iframe>'
-templateKey: home
+templateKey: index
 ---

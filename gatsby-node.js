@@ -40,7 +40,7 @@ exports.createPages = ({ graphql, actions }) => {
       const next = index === 0 ? null : pages[index - 1].node
 
       const component = path.resolve(
-        `src/templates/${String(page.node.frontmatter.templateKey)}.tsx`
+        `src/pages/${String(page.node.frontmatter.templateKey)}.tsx`
       )
 
       createPage({
