@@ -20,6 +20,30 @@ collections:
         label: "Home"
         fields:
           - { name: title, label: Title }
+          - { name: subTitle, label: Sub Title }
+          - { name: quote, label: Main Quote }
+          - { name: mailingListBlurb, label: Mailing-list Blurb }
+          - { name: recentReleasesHeadline, label: Recent Releases Headline }
+          - {
+              name: recentReleases,
+              label: Recent Releases,
+              widget: list,
+              fields:
+                [
+                  { name: description, label: Description, widget: markdown },
+                  { name: image, label: Image, widget: image },
+                ],
+            }
+          - {
+              name: audioCallOut,
+              label: Audio Callout,
+              widget: list,
+              fields:
+                [
+                  { name: description, label: Description, widget: markdown },
+                  { name: embed, label: Audio Embed (YouTube / SoundCloud) },
+                ],
+            }
           - { name: templateKey, label: "Template Key", default: "home" }
 
       - file: "content/pages/studio.md"
