@@ -20,7 +20,11 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: "/listen-here/" } }) {
       frontmatter {
         title
-        templateKey
+        subTitle
+        recordings {
+          embed
+          description
+        }
       }
     }
   }

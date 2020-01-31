@@ -21,22 +21,14 @@ content: >-
   your playing time more enjoyable.
 
 
-  \---
-
-
-  ## A complete restoration on a 1960's Martin D-28 including replacing the X
+  ### A complete restoration on a 1960's Martin D-28 including replacing the X
   bracing:
-
-
-  ## 
 
 
   ![](/assets/martin-repair.jpg)
 
 
-
-
-  ## Fully restored Gibson:
+  ### Fully restored Gibson:
 
 
   ![](/assets/gibson-1.jpg)
