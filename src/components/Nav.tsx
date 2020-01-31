@@ -45,7 +45,7 @@ export default function Nav() {
 
       <Flex flexDirection="column" justifyContent="center">
         <Link to="/">Home</Link>
-        <Link to="/soundlab">Recording Studio</Link>
+        <Link to="/studio">Recording Studio</Link>
         <Link to="/listen-here">Listen Here</Link>
         <Link to="/classes-workshops">Classes / Workshops</Link>
         <Link to="/gr-music">George R's Music</Link>

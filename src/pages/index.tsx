@@ -17,14 +17,7 @@ export default function IndexPage(props) {
 
 export const pageQuery = graphql`
   query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
     markdownRemark(fields: { slug: { eq: "/home/" } }) {
-      # excerpt
-      # html
       frontmatter {
         title
         templateKey

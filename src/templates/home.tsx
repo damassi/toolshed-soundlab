@@ -17,7 +17,7 @@ export const HomeTemplate = props => {
       <Box>
         <Box>
           <Flex justifyContent="space-between">
-            <a href="/soundlab">
+            <a href="/studio">
               <Box height={250}>
                 <img
                   src="/assets/images/home/studio.jpg"

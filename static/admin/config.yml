@@ -12,51 +12,54 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: home
-    label: Home
-    folder: content
-    create: true
-    fields:
-      - { name: title, label: Title }
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/pages/home.md"
+        name: "home"
+        label: "Home"
+        fields:
+          - { name: title, label: Title }
+          - { name: templateKey, label: "Template Key", default: "home" }
 
-  - name: recording-studio
-    label: Recording Studio
-    folder: content
-    create: true
-    fields:
-      - { name: title, label: Title }
+      - file: "content/pages/studio.md"
+        name: "studio"
+        label: "Studio"
+        fields:
+          - { name: title, label: Title }
+          - { name: templateKey, label: "Template Key", default: "studio" }
 
-  - name: listen-here
-    label: Listen Here
-    folder: content
-    create: true
-    fields:
-      - { name: path, label: Path }
+      - file: "content/pages/listen-here.md"
+        name: "listen-here"
+        label: "Listen Here"
+        fields:
+          - { name: title, label: Title }
+          - { name: templateKey, label: "Template Key", default: "listen-here" }
 
-  - name: classes-workshops
-    label: Classes Workshops
-    folder: content
-    create: true
-    fields:
-      - { name: path, label: Path }
+      - file: "content/pages/classes.md"
+        name: "classes"
+        label: "Classes & Workshops"
+        fields:
+          - { name: title, label: Title }
+          - { name: templateKey, label: "Template Key", default: "classes" }
 
-  - name: george
-    label: George R's Music
-    folder: content
-    create: true
-    fields:
-      - { name: path, label: Path }
+      - file: "content/pages/gr-music.md"
+        name: "gr-music"
+        label: "George R's Music"
+        fields:
+          - { name: title, label: Title }
+          - { name: templateKey, label: "Template Key", default: "gr-music" }
 
-  - name: lutherie-services
-    label: Lutherie Services
-    folder: content
-    create: true
-    fields:
-      - { name: path, label: Path }
+      - file: "content/pages/lutherie.md"
+        label: "Lutherie Services"
+        name: "lutherie"
+        fields:
+          - { name: title, label: Title }
+          - { name: templateKey, label: "Template Key", default: "lutherie" }
 
-  - name: contact
-    label: Contact
-    folder: content
-    create: true
-    fields:
-      - { name: path, label: Path }
+      - file: "content/pages/contact.md"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - { name: title, label: Title }
+          - { name: templateKey, label: "Template Key", default: "contact" }

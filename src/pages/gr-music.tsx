@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "src/components/layout"
 import { SEO } from "src/components/seo"
 import { GRMusicTemplate } from "src/templates/gr-music"
+import { graphql } from "gatsby"
 
 const GRMusicPage = _props => {
   return (
@@ -13,3 +14,14 @@ const GRMusicPage = _props => {
 }
 
 export default GRMusicPage
+
+export const pageQuery = graphql`
+  query {
+    markdownRemark(fields: { slug: { eq: "/gr-music/" } }) {
+      frontmatter {
+        title
+        templateKey
+      }
+    }
+  }
+`

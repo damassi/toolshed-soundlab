@@ -22,7 +22,6 @@ exports.createPages = ({ graphql, actions }) => {
               frontmatter {
                 title
                 templateKey
-                page
               }
             }
           }

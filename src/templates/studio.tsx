@@ -3,7 +3,7 @@ import { Flex, Text, Box } from "rebass/styled-components"
 import { Quote } from "src/components/Quote"
 import { Spacer } from "src/components/Spacer"
 
-export const SoundLabTemplate = _props => {
+export const StudioTemplate = _props => {
   return (
     <Box>
       <Box style={{ textAlign: "center" }}>
