@@ -1,76 +1,44 @@
 import React from "react"
+import ReactMarkdown from "react-markdown"
 import { Flex, Text, Box } from "rebass/styled-components"
 import { Quote } from "src/components/Quote"
 import { Spacer } from "src/components/Spacer"
 
-export const StudioTemplate = _props => {
+export const StudioTemplate = props => {
+  const {
+    frontmatter: {
+      title,
+      subTitle,
+      mainImage,
+      features,
+      testimonial,
+      moreInfo,
+      artists,
+    },
+  } = props
+
   return (
     <Box>
       <Box style={{ textAlign: "center" }}>
-        <h1>Music Production & Recording at Toolshed SoundLab</h1>
-        <h4>
-          I offer music production & recording services at a comfortable studio
-          in Port Townsend, WA.
-        </h4>
+        <h1>{title}</h1>
+        <h4>{subTitle}</h4>
       </Box>
-      <Flex>
-        <img src="/assets/images/toolshed-360.jpg" />
-      </Flex>
+      <Box>
+        <img src={mainImage} width="100%" />
+      </Box>
 
       <Spacer mb={4} />
 
       <Box>
         <h3>Features</h3>
-        <ul>
-          <li>
-            16’ x 24’ live room with 16’ vaulted wood ceilings, radiant floor
-            heat and a hepa filtered ventilation system
-          </li>
-          <li>
-            12’ x 16’ control room equipped with Burl Audio B32 Summing amp /
-            B26 Monitor control & Mackie MCU
-          </li>
-          <li>
-            Microphones: Pearlman, MBHO, Neaumann, B&0, Beyer, Sennheiser, Ear
-            Trumpet, Miktek, Beyer, Sony
-          </li>
-          <li>
-            Preamps: Forssell, UA, Vintech, Grace, Langevin, Focusrite, Joe
-            Meek, Guido
-          </li>
-          <li>
-            Mac Pro, 16 gig ram, Logic 9 and 10, 16 channels of Lynx Aurora
-            conversion and UAD-2 plug-ins
-          </li>
-          <li>1885 Weber Piano - Brazilian Rosewood Upright Grand</li>
-          <li>
-            1962 Hammond B3 with 122 Leslie - excellent original condition
-          </li>
-          <li>Fender Rhodes Model Seventy-Three</li>
-          <li>
-            Vintage acoustic & electric guitars and amps available for sessions
-          </li>
-        </ul>
+        <ReactMarkdown source={features} />
       </Box>
 
       <Spacer my={4} />
 
       <hr />
 
-      <Quote>
-        “Recording at ToolShed SoundLab was an exceptionally easy and satisfying
-        experience, and after four decades of making records, that's really
-        saying something! The room itself is a great-sounding space, high
-        ceilings and with many instruments hanging on the walls. George got
-        great sounds on all of our many different acoustic instruments, the best
-        we've had for a long, long time; taking the time to really listen and
-        adjust until each miking setup was optimized for its particular
-        instruments. His experience as a luthier makes him extra-attuned to the
-        sounds of the instruments. George is so easy to work with - friendly,
-        professional, relaxed, and an excellent communicator. Even the rough
-        mixes sound good!” <br />
-        <Text fontSize={2}>Eric and Suzy Thompson</Text>
-      </Quote>
+      <Quote>{testimonial}</Quote>
 
       <hr />
 
@@ -125,153 +93,27 @@ export const StudioTemplate = _props => {
         <Spacer my={4} />
 
         <Box>
-          <h3>Remote Recording</h3>
-          <p>
-            I offer remote recording utilizing a Universal Audio Apollo 8 and
-            Vintech 473 Neve style 4 channel Mic Pre. Please inquire about
-            availability and rates.
-          </p>
-
-          <p>
-            Although I do have modern digital recording equipment, my goal is to
-            produce music the good old fashioned way, where the music comes
-            first; as live and direct as possible - I’m an analog guy in a
-            digital world.
-          </p>
-          <p>
-            If you are interested in having me produce and/or record your
-            project please contact me for details. I am always happy to discuss
-            pre-production needs and concerns.
-            <a href="/contact">Contact me</a>
-          </p>
+          <ReactMarkdown source={moreInfo} />
         </Box>
 
         <hr />
 
-        <Flex justifyContent="center">
-          <Flex justifyContent="center" flexDirection="column" width="50%">
-            <Box>
-              <img src="/assets/images/soundlab/ceiling.jpg" />
-            </Box>
-            <Box>
-              The ceiling for the studio control room was built by Niels Holm
-              (rip). I am grateful for his contribution.
-            </Box>
-          </Flex>
+        <Flex justifyContent="center" flexDirection="column">
+          <Box style={{ textAlign: "center" }}>
+            <img src="/assets/images/soundlab/ceiling.jpg" />
+          </Box>
+          <Box style={{ textAlign: "center" }}>
+            The ceiling for the studio control room was built by Niels Holm
+            (rip). I am grateful for his contribution.
+          </Box>
         </Flex>
 
-        <Spacer my={5} />
+        <Box my={4}>
+          <hr />
+        </Box>
 
         <Box>
-          <h3>Artists</h3>
-          <Flex>
-            Suzy & Eric Thompson <br />
-            Maria Muldaur
-            <br />
-            Trio Brasiliero
-            <br />
-            Tyva Kyzy
-            <br />
-            Hot Club Sandwich
-            <br />
-            Crow Quill Night Owls
-            <br />
-            Gallus Bros.
-            <br />
-            Below the Salt
-            <br />
-            Inkwell Rhythm Makers
-            <br />
-            Like A Child / Level Bros.
-            <br />
-            Mark Pearson / Bothers Four
-            <br />
-            Port Townsend Community Choir
-            <br />
-            Elaine Noel
-            <br />
-            The Aimees
-            <br />
-            Famous Lucy
-            <br />
-            Wooly Breeches
-            <br />
-            Blackberry Bushes
-            <br />
-            Ben & Joe w/ Phil Wiggins
-            <br />
-            Rattletrap Ruckus
-            <br />
-            Ben Hunter & Joe Seamons
-            <br />
-            Cort Armstrong / Hucksters
-            <br />
-            Clay Bartlett
-            <br />
-            Sam Doores
-            <br />
-            Deobrat Mishra
-            <br />
-            Shady Grove
-            <br />
-            Dhoom
-            <br />
-            Khrome
-            <br />
-            Jake Wolf
-            <br />
-            Daniel Mackie
-            <br />
-            Usana / Love Doll Swinger
-            <br />
-            Linda Vale
-            <br />
-            Happanstance
-            <br />
-            Whiskey Puppy
-            <br />
-            Janna Marit
-            <br />
-            In Droves
-            <br />
-            Micaela Kingslight
-            <br />
-            Di Trani Brothers
-            <br />
-            Alanna Dailey
-            <br />
-            Mille Ulla Ruud
-            <br />
-            Stubby / Brian Stabile
-            <br />
-            Faith Pray
-            <br />
-            Paul Chasman / Last of Us Soundtrack
-            <br />
-            Sky Ride - Brenda Hunter & Mary Tullin
-            <br />
-            O.M.G.S.
-            <br />
-            Pete Toyne
-            <br />
-            Mold On The Rye
-            <br />
-            Dave Sheehan
-            <br />
-            Dukes Of Dabob
-            <br />
-            Trillium
-            <br />
-            David Cooper
-            <br />
-            Tony Flaggs
-            <br />
-            Lis Nagy
-            <br />
-            Jack Reid
-            <br />
-            David Vohs
-          </Flex>
+          <ReactMarkdown source={artists} />
         </Box>
       </Box>
     </Box>

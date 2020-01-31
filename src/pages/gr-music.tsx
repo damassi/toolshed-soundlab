@@ -4,11 +4,11 @@ import { SEO } from "src/components/seo"
 import { GRMusicTemplate } from "src/templates/gr-music"
 import { graphql } from "gatsby"
 
-const GRMusicPage = _props => {
+const GRMusicPage = props => {
   return (
     <Layout>
       <SEO title="George's Music" />
-      <GRMusicTemplate />
+      <GRMusicTemplate {...props.data.markdownRemark} />
     </Layout>
   )
 }
@@ -20,7 +20,7 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: "/gr-music/" } }) {
       frontmatter {
         title
-        templateKey
+        content
       }
     }
   }

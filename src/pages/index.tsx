@@ -5,8 +5,6 @@ import { HomeTemplate } from "src/templates/home"
 import { graphql } from "gatsby"
 
 export default function IndexPage(props) {
-  // console.log(props)
-
   return (
     <Layout>
       <SEO title="Home" />
@@ -20,7 +18,18 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: "/home/" } }) {
       frontmatter {
         title
-        templateKey
+        subTitle
+        quote
+        mailingListBlurb
+        recentReleasesHeadline
+        recentReleases {
+          description
+          image
+        }
+        audioCallOut {
+          embed
+          description
+        }
       }
     }
   }

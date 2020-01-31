@@ -47,7 +47,7 @@ export default function Nav() {
         <Link to="/">Home</Link>
         <Link to="/studio">Recording Studio</Link>
         <Link to="/listen-here">Listen Here</Link>
-        <Link to="/classes-workshops">Classes / Workshops</Link>
+        <Link to="/classes">Classes / Workshops</Link>
         <Link to="/gr-music">George R's Music</Link>
         <Link to="/lutherie">Lutherie Services</Link>
         <Link to="/contact">Contact</Link>
