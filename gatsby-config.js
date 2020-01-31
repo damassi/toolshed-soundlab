@@ -10,17 +10,35 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     "gatsby-plugin-catch-links",
-    "gatsby-plugin-netlify-cms",
     "gatsby-plugin-styled-components",
     "gatsby-plugin-typescript",
+    "gatsby-plugin-root-import",
     {
-      resolve: "gatsby-plugin-root-import",
+      resolve: "gatsby-plugin-netlify-cms",
+      options: {
+        modulePath: `${__dirname}/src/cms/cms.jsx`,
+        manualInit: true,
+        enableIdentityWidget: false,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/pages`,
+        name: `pages`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [`gatsby-remark-smartypants`],
       },
     },
     {

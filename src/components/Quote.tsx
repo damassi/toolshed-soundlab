@@ -1,5 +1,5 @@
 import React from "react"
-import { Box, Text } from "rebass"
+import { Box, Text } from "rebass/styled-components"
 
 export const Quote = props => {
   return (

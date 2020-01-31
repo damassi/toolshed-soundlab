@@ -1,15 +1,11 @@
 import React from "react"
-import Layout from "src/components/layout"
-import { Flex, Text, Box } from "rebass"
+import { Flex, Text, Box } from "rebass/styled-components"
 import { Quote } from "src/components/Quote"
 import { Spacer } from "src/components/Spacer"
-import { Link } from "gatsby"
-import { SEO } from "src/components/seo"
 
-const SoundLabPage = _props => {
+export const StudioTemplate = _props => {
   return (
-    <Layout>
-      <SEO title="SoundLab" />
+    <Box>
       <Box style={{ textAlign: "center" }}>
         <h1>Music Production & Recording at Toolshed SoundLab</h1>
         <h4>
@@ -18,7 +14,7 @@ const SoundLabPage = _props => {
         </h4>
       </Box>
       <Flex>
-        <img src="images/toolshed-360.jpg" />
+        <img src="/assets/images/toolshed-360.jpg" />
       </Flex>
 
       <Spacer mb={4} />
@@ -84,7 +80,10 @@ const SoundLabPage = _props => {
         <Flex justifyContent="center">
           <Flex flexDirection="column" width="40%">
             <Box>
-              <img src="images/soundlab/george-owner.jpg" height={200} />
+              <img
+                src="/assets/images/soundlab/george-owner.jpg"
+                height={200}
+              />
             </Box>
             <Text textAlign="center" fontSize={2}>
               George Rezendes owner, engineer, producer, musician
@@ -93,7 +92,11 @@ const SoundLabPage = _props => {
           <Spacer mx={4} />
           <Flex flexDirection="column" width="40%">
             <Box>
-              <img src="images/soundlab/cj.jpg" width="auto" height={200} />
+              <img
+                src="/assets/images/soundlab/cj.jpg"
+                width="auto"
+                height={200}
+              />
             </Box>
             <Text textAlign="center" fontSize={2}>
               Camelia Jade ( CJ ) Lazenby recording and mastering engineer,
@@ -107,15 +110,15 @@ const SoundLabPage = _props => {
         <Spacer my={4} />
 
         <Flex justifyContent="space-between">
-          <img src="images/soundlab/studio-1.jpg" width="49%" />
-          <img src="images/soundlab/studio-2.jpg" width="49%" />
+          <img src="/assets/images/soundlab/studio-1.jpg" width="49%" />
+          <img src="/assets/images/soundlab/studio-2.jpg" width="49%" />
         </Flex>
 
         <Spacer my={4} />
 
         <Flex justifyContent="center">
           <Box>
-            <img src="images/soundlab/control-room.jpg" />
+            <img src="/assets/images/soundlab/control-room.jpg" />
           </Box>
         </Flex>
 
@@ -139,7 +142,7 @@ const SoundLabPage = _props => {
             If you are interested in having me produce and/or record your
             project please contact me for details. I am always happy to discuss
             pre-production needs and concerns.
-            <Link to="/contact">Contact me</Link>
+            <a href="/contact">Contact me</a>
           </p>
         </Box>
 
@@ -148,7 +151,7 @@ const SoundLabPage = _props => {
         <Flex justifyContent="center">
           <Flex justifyContent="center" flexDirection="column" width="50%">
             <Box>
-              <img src="images/soundlab/ceiling.jpg" />
+              <img src="/assets/images/soundlab/ceiling.jpg" />
             </Box>
             <Box>
               The ceiling for the studio control room was built by Niels Holm
@@ -271,8 +274,6 @@ const SoundLabPage = _props => {
           </Flex>
         </Box>
       </Box>
-    </Layout>
+    </Box>
   )
 }
-
-export default SoundLabPage

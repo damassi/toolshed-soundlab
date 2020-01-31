@@ -1,14 +1,65 @@
+# Netlify "kitchen sink" example: https://github.com/netlify/netlify-cms/blob/master/dev-test/config.yml
+
+localhost_development:
+  backend:
+    name: file-system
+    api_root: /api
+
 backend:
   name: test-repo
+
 media_folder: static/assets
 public_folder: assets
+
 collections:
-  - name: blog
-    label: Blog
-    folder: blog
-    create: true
-    fields:
-      - { name: path, label: Path }
-      - { name: date, label: Date, widget: datetime }
-      - { name: title, label: Title }
-      - { name: body, label: Body, widget: markdown }
+  - name: "pages"
+    label: "Pages"
+    files:
+      - file: "content/pages/home.md"
+        name: "home"
+        label: "Home"
+        fields:
+          - { name: title, label: Title }
+          - { name: templateKey, label: "Template Key", default: "home" }
+
+      - file: "content/pages/studio.md"
+        name: "studio"
+        label: "Studio"
+        fields:
+          - { name: title, label: Title }
+          - { name: templateKey, label: "Template Key", default: "studio" }
+
+      - file: "content/pages/listen-here.md"
+        name: "listen-here"
+        label: "Listen Here"
+        fields:
+          - { name: title, label: Title }
+          - { name: templateKey, label: "Template Key", default: "listen-here" }
+
+      - file: "content/pages/classes.md"
+        name: "classes"
+        label: "Classes & Workshops"
+        fields:
+          - { name: title, label: Title }
+          - { name: templateKey, label: "Template Key", default: "classes" }
+
+      - file: "content/pages/gr-music.md"
+        name: "gr-music"
+        label: "George R's Music"
+        fields:
+          - { name: title, label: Title }
+          - { name: templateKey, label: "Template Key", default: "gr-music" }
+
+      - file: "content/pages/lutherie.md"
+        label: "Lutherie Services"
+        name: "lutherie"
+        fields:
+          - { name: title, label: Title }
+          - { name: templateKey, label: "Template Key", default: "lutherie" }
+
+      - file: "content/pages/contact.md"
+        label: "Contact"
+        name: "contact"
+        fields:
+          - { name: title, label: Title }
+          - { name: templateKey, label: "Template Key", default: "contact" }

@@ -1,7 +1,7 @@
 import React from "react"
 import "./layout.css"
 import Nav from "./Nav"
-import { Box, Flex } from "rebass"
+import { Box, Flex } from "rebass/styled-components"
 
 const Layout = ({ children }) => {
   return (

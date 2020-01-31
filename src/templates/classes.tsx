@@ -1,20 +1,16 @@
 import React from "react"
-import Layout from "src/components/layout"
-import { Box, Flex } from "rebass"
+import { Box, Flex } from "rebass/styled-components"
 import { Spacer } from "src/components/Spacer"
-import { Link } from "gatsby"
-import { SEO } from "src/components/seo"
 
-const ClassesWorkshopsPage = _props => {
+export const ClassesWorkshopsTemplate = _props => {
   return (
-    <Layout>
-      <SEO title="Classes & Workshops" />
+    <Box>
       <Flex justifyContent="center">
         <Flex flexDirection="column" width="100%" alignItems="center">
           <h1 style={{ textAlign: "center" }}>Classes & Workshops</h1>
 
           <Box>
-            <img src="images/classes-workshops/soundlab-banner.jpg" />
+            <img src="/assets/images/classes-workshops/soundlab-banner.jpg" />
           </Box>
         </Flex>
       </Flex>
@@ -76,11 +72,9 @@ const ClassesWorkshopsPage = _props => {
         <Spacer my={4} />
 
         <Box>
-          <Link to="/contact">Contact Me</Link>
+          <a href="/contact">Contact Me</a>
         </Box>
       </Box>
-    </Layout>
+    </Box>
   )
 }
-
-export default ClassesWorkshopsPage

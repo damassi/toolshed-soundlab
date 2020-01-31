@@ -4,7 +4,7 @@ import {
   createGlobalStyle,
 } from "styled-components"
 import theme from "@rebass/preset"
-import { Box } from "rebass"
+import { Box } from "rebass/styled-components"
 
 const GlobalStyle = createGlobalStyle`
   html, body {
@@ -13,7 +13,6 @@ const GlobalStyle = createGlobalStyle`
   }
 
   h1, h2, h3, h4 {
-    /* font-family: Herculanum, Sans; */
     color: #ffc302;
   }
 
