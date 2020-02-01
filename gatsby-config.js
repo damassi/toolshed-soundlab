@@ -18,7 +18,7 @@ module.exports = {
       options: {
         modulePath: `${__dirname}/src/cms/cms.jsx`,
         manualInit: true,
-        enableIdentityWidget: false,
+        enableIdentityWidget: true,
       },
     },
     {

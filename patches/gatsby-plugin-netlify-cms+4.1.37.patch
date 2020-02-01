@@ -1,0 +1,13 @@
+diff --git a/node_modules/gatsby-plugin-netlify-cms/cms-identity.js b/node_modules/gatsby-plugin-netlify-cms/cms-identity.js
+index 718efbb..96c7a9e 100644
+--- a/node_modules/gatsby-plugin-netlify-cms/cms-identity.js
++++ b/node_modules/gatsby-plugin-netlify-cms/cms-identity.js
+@@ -23,4 +23,6 @@ _netlifyIdentityWidget.default.on("init", function (user) {
+   }
+ });
+ 
+-_netlifyIdentityWidget.default.init();
+\ No newline at end of file
++setTimeout(() => {
++  _netlifyIdentityWidget.default.init();
++})
