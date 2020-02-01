@@ -1,5 +1,5 @@
 ---
-title: Toolshed SoundLab
+title: Toolshed SoundLab 2
 subTitle: 'A comfortable, relaxed recording studio in the heart of Port Townsend'
 quote: '"Music is the most fun you can have without gettin’ into trouble"'
 mailingListBlurb: >-
