@@ -1,7 +1,6 @@
 ---
 title: Toolshed SoundLab
-subTitle:
-  "A comfortable, relaxed recording studio in the heart of Port Townsend"
+subTitle: 'A comfortable, relaxed recording studio in the heart of Port Townsend'
 quote: '"Music is the most fun you can have without gettin’ into trouble"'
 mailingListBlurb: >-
   You can now easily stay informed of music and recording events happening at
@@ -33,20 +32,15 @@ audioCallOut:
       commissioned Guthrie to write songs to help promote to the public the
       construction of dams along the Columbia River.
       https://tinyurl.com/roll-columbia
-    embed:
-      ' <iframe               width="100%"               height="166"               scrolling="no"               frameBorder="no"               src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/309920488&amp;color=ff9900&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>'
-  - description:
-      " From the Rattletrap Rukuc recording RedLight Rag in loving memory of Mr.
-      Lucas Hicks"
+    embed: ' <iframe width="100%" height="166" scrolling="no" frameBorder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/309920488&amp;color=ff9900&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>'
+  - description: ' From the Rattletrap Rukuc recording RedLight Rag in loving memory of Mr. Lucas Hicks'
     embed: >-
       <iframe width="80%" height="315"
       src="https://www.youtube.com/embed/XY5de425CLg"
       frameBorder="0"               allow="accelerometer; autoplay;
       encrypted-media; gyroscope; picture-in-picture"  allowFullScreen></iframe>
   - description: A live recording of the Blackberry Bushes
-    embed:
-      ' <iframe               width="80%"               height="315"               src="https://www.youtube.com/embed/9VdG1oicOBA"               frameBorder="0"               allow="accelerometer;
-      autoplay; encrypted-media; gyroscope;
-      picture-in-picture"               allowFullScreen             ></iframe>'
+    embed: ' <iframe               width="80%"               height="315"               src="https://www.youtube.com/embed/9VdG1oicOBA"               frameBorder="0"               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"               allowFullScreen             ></iframe>'
 templateKey: index
 ---
+
