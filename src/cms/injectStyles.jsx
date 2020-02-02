@@ -30,7 +30,6 @@ export function injectStyles(Comp) {
     return (
       <StyleInjector>
         <Box
-          id="hello"
           p={4}
           backgroundColor="#693807"
           style={{
