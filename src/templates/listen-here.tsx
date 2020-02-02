@@ -1,6 +1,7 @@
 import React from "react"
 import ReactMarkdown from "react-markdown"
 import { Box, Flex, Text } from "rebass/styled-components"
+import { SectionDivider } from "src/components/SectionDivider"
 
 export const ListenHereTemplate = props => {
   const {
@@ -16,8 +17,8 @@ export const ListenHereTemplate = props => {
       <Box>
         {recordings.map((recording, index) => {
           return (
-            <>
-              <Box key={index}>
+            <Box key={index}>
+              <Box>
                 <Box>
                   <div dangerouslySetInnerHTML={{ __html: recording.embed }} />
                 </Box>
@@ -25,23 +26,21 @@ export const ListenHereTemplate = props => {
                   <ReactMarkdown source={recording.description} />
                 </Box>
               </Box>
-              {index !== recordings.length - 1 && (
-                <Box my={4}>
-                  <hr />
-                </Box>
-              )}
-            </>
+              {index !== recordings.length - 1 && <SectionDivider />}
+            </Box>
           )
         })}
       </Box>
 
-      <Box my={4}>
-        <hr />
-      </Box>
+      <SectionDivider />
 
       <Box>
         <Flex flexWrap="wrap">
-          <Flex width="33%" flexDirection="column" alignItems="center">
+          <Flex
+            width={["50%", "33%"]}
+            flexDirection="column"
+            alignItems="center"
+          >
             <Box>
               <img src="/assets/images/listen-here/dudu-mala.jpg" />
             </Box>
@@ -49,8 +48,11 @@ export const ListenHereTemplate = props => {
               Dudu Maia & Douglas Loura Vibrações
             </Text>
           </Flex>
-
-          <Flex width="33%" flexDirection="column" alignItems="center">
+          <Flex
+            width={["50%", "33%"]}
+            flexDirection="column"
+            alignItems="center"
+          >
             <Box>
               <img src="/assets/images/listen-here/stubby.jpg" />
             </Box>
@@ -58,8 +60,11 @@ export const ListenHereTemplate = props => {
               Stubby & the Electric Blanket on and on and on
             </Text>
           </Flex>
-
-          <Flex width="33%" flexDirection="column" alignItems="center">
+          <Flex
+            width={["50%", "33%"]}
+            flexDirection="column"
+            alignItems="center"
+          >
             <Box>
               <img src="/assets/images/listen-here/sam.jpg" />
             </Box>
@@ -67,8 +72,11 @@ export const ListenHereTemplate = props => {
               Sam Doores Farmland Blues
             </Text>
           </Flex>
-
-          <Flex width="33%" flexDirection="column" alignItems="center">
+          <Flex
+            width={["50%", "33%"]}
+            flexDirection="column"
+            alignItems="center"
+          >
             <Box>
               <img src="/assets/images/listen-here/kate.jpg" />
             </Box>
@@ -77,8 +85,11 @@ export const ListenHereTemplate = props => {
               Soundlab
             </Text>
           </Flex>
-
-          <Flex width="33%" flexDirection="column" alignItems="center">
+          <Flex
+            width={["50%", "33%"]}
+            flexDirection="column"
+            alignItems="center"
+          >
             <Box>
               <img src="/assets/images/listen-here/gallus.jpg" />
             </Box>
@@ -86,8 +97,11 @@ export const ListenHereTemplate = props => {
               Gallus Bros. Instrumental
             </Text>
           </Flex>
-
-          <Flex width="33%" flexDirection="column" alignItems="center">
+          <Flex
+            width={["50%", "33%"]}
+            flexDirection="column"
+            alignItems="center"
+          >
             <Box>
               <img src="/assets/images/listen-here/paul.jpg" />
             </Box>
@@ -95,8 +109,11 @@ export const ListenHereTemplate = props => {
               Paul Chasman / Last of Us Soundtrack
             </Text>
           </Flex>
-
-          <Flex width="33%" flexDirection="column" alignItems="center">
+          <Flex
+            width={["50%", "33%"]}
+            flexDirection="column"
+            alignItems="center"
+          >
             <Box>
               <img src="/assets/images/listen-here/usana.jpg" />
             </Box>
@@ -104,8 +121,11 @@ export const ListenHereTemplate = props => {
               Usana Great Day
             </Text>
           </Flex>
-
-          <Flex width="33%" flexDirection="column" alignItems="center">
+          <Flex
+            width={["50%", "33%"]}
+            flexDirection="column"
+            alignItems="center"
+          >
             <Box>
               <img src="/assets/images/listen-here/crow.jpg" />
             </Box>
@@ -113,8 +133,11 @@ export const ListenHereTemplate = props => {
               Crow Quill Night Owls Wake Up Sinners
             </Text>
           </Flex>
-
-          <Flex width="33%" flexDirection="column" alignItems="center">
+          <Flex
+            width={["50%", "33%"]}
+            flexDirection="column"
+            alignItems="center"
+          >
             <Box>
               <img src="/assets/images/listen-here/gallus-2.jpg" />
             </Box>
@@ -122,8 +145,11 @@ export const ListenHereTemplate = props => {
               Gallus Bros, mighty good leader
             </Text>
           </Flex>
-
-          <Flex width="33%" flexDirection="column" alignItems="center">
+          <Flex
+            width={["50%", "33%"]}
+            flexDirection="column"
+            alignItems="center"
+          >
             <Box>
               <img src="/assets/images/listen-here/inkwell.jpg" />
             </Box>
@@ -131,8 +157,11 @@ export const ListenHereTemplate = props => {
               Inkwell Rhythm Makers Oh Mama
             </Text>
           </Flex>
-
-          <Flex width="33%" flexDirection="column" alignItems="center">
+          <Flex
+            width={["50%", "33%"]}
+            flexDirection="column"
+            alignItems="center"
+          >
             <Box>
               <img src="/assets/images/listen-here/below.jpg" />
             </Box>
@@ -140,8 +169,11 @@ export const ListenHereTemplate = props => {
               Below the Salt Alliswinigitator
             </Text>
           </Flex>
-
-          <Flex width="33%" flexDirection="column" alignItems="center">
+          <Flex
+            width={["50%", "33%"]}
+            flexDirection="column"
+            alignItems="center"
+          >
             <Box>
               <img src="/assets/images/listen-here/black.jpg" />
             </Box>

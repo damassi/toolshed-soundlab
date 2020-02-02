@@ -2,6 +2,7 @@ import React from "react"
 import ReactMarkdown from "react-markdown"
 import { Box, Flex, Text } from "rebass/styled-components"
 import { Spacer } from "src/components/Spacer"
+import { SectionDivider } from "src/components/SectionDivider"
 
 export const GRMusicTemplate = props => {
   const {
@@ -12,7 +13,7 @@ export const GRMusicTemplate = props => {
     <Box>
       <Box>
         <Flex justifyContent="center">
-          <Box mr={2} width="40%">
+          <Box mr={2} width={["100%", "40%"]}>
             <Box>
               <h2 style={{ fontFamily: "Herculanum", marginBottom: 5 }}>
                 george rezendes
@@ -32,12 +33,15 @@ export const GRMusicTemplate = props => {
       <Box>
         <ReactMarkdown source={content} />
 
-        <Box my={4}>
-          <hr />
-        </Box>
+        <SectionDivider />
 
-        <Flex>
-          <Flex width="33%" flexDirection="column" alignItems="center">
+        <Flex flexDirection={["column", "row"]}>
+          <Flex
+            width={["100%", "33%"]}
+            flexDirection="column"
+            alignItems="center"
+            mb={[40, 0]}
+          >
             <Box>
               <img src="/assets/images/gr-music/george-john.jpg" />
             </Box>
@@ -46,7 +50,12 @@ export const GRMusicTemplate = props => {
             </Text>
           </Flex>
 
-          <Flex width="33%" flexDirection="column" alignItems="center">
+          <Flex
+            width={["100%", "33%"]}
+            flexDirection="column"
+            alignItems="center"
+            mb={[40, 0]}
+          >
             <Box>
               <img src="/assets/images/gr-music/george-felix.jpg" />
             </Box>
@@ -55,7 +64,11 @@ export const GRMusicTemplate = props => {
             </Text>
           </Flex>
 
-          <Flex width="33%" flexDirection="column" alignItems="center">
+          <Flex
+            width={["100%", "33%"]}
+            flexDirection="column"
+            alignItems="center"
+          >
             <Box>
               <img src="/assets/images/gr-music/toolshed-trio.jpg" />
             </Box>
