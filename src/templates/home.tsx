@@ -2,8 +2,8 @@ import React from "react"
 import ReactMarkdown from "react-markdown"
 import { Flex, Text, Box } from "rebass/styled-components"
 import { SubscribeForm } from "src/components/SubscribeForm"
-import { Spacer } from "src/components/Spacer"
 import { Quote } from "src/components/Quote"
+import { SectionDivider } from "src/components/SectionDivider"
 
 export const HomeTemplate = props => {
   const {
@@ -28,7 +28,7 @@ export const HomeTemplate = props => {
         <Box>
           <Flex justifyContent="space-between">
             <a href="/studio">
-              <Box height={250}>
+              <Box height={[100, 250]}>
                 <img
                   src="/assets/images/home/studio.jpg"
                   style={{ maxHeight: 250 }}
@@ -41,7 +41,7 @@ export const HomeTemplate = props => {
               </Box>
             </a>
             <a href="/gr-music">
-              <Box height={250}>
+              <Box height={[100, 250]}>
                 <img
                   src="/assets/images/home/george.png"
                   style={{ maxHeight: 250 }}
@@ -57,9 +57,7 @@ export const HomeTemplate = props => {
           <Text fontSize={2}>- Toolshed Do-Right</Text>
         </Quote>
 
-        <Box my={4}>
-          <hr />
-        </Box>
+        <SectionDivider />
 
         <Box>
           <Text color="#ffa70a" textAlign="center">
@@ -71,22 +69,22 @@ export const HomeTemplate = props => {
           </Flex>
         </Box>
 
-        <Box my={4}>
-          <hr />
-        </Box>
-
-        <Spacer my={4} />
+        <SectionDivider />
 
         <h2>{recentReleasesHeadline}</h2>
 
         {recentReleases.map((release, index) => {
           return (
             <Flex key={index}>
-              <Flex>
-                <Box width="33%" pr={4}>
+              <Flex
+                flexDirection={["column", "row"]}
+                alignItems={["center", "inherit"]}
+                width="100%"
+              >
+                <Box width={["100%", "33%"]} pr={[0, 4]}>
                   <img src={release.image} />
                 </Box>
-                <Box width="66%">
+                <Box width={["100%", "66%"]}>
                   <ReactMarkdown source={release.description} />
                 </Box>
               </Flex>
@@ -94,9 +92,7 @@ export const HomeTemplate = props => {
           )
         })}
 
-        <Box my={4}>
-          <hr />
-        </Box>
+        <SectionDivider />
 
         {audioCallOut.map((callout, index) => {
           return (
@@ -110,11 +106,7 @@ export const HomeTemplate = props => {
                 </Flex>
                 <ReactMarkdown source={callout.description} />
               </Box>
-              {index !== audioCallOut.length - 1 && (
-                <Box my={4}>
-                  <hr />
-                </Box>
-              )}
+              {index !== audioCallOut.length - 1 && <SectionDivider />}
             </>
           )
         })}

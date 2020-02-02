@@ -3,6 +3,7 @@ import ReactMarkdown from "react-markdown"
 import { Flex, Text, Box } from "rebass/styled-components"
 import { Quote } from "src/components/Quote"
 import { Spacer } from "src/components/Spacer"
+import { SectionDivider } from "src/components/SectionDivider"
 
 export const StudioTemplate = props => {
   const {
@@ -34,24 +35,17 @@ export const StudioTemplate = props => {
         <ReactMarkdown source={features} />
       </Box>
 
-      <Spacer my={4} />
-
-      <hr />
+      <SectionDivider />
 
       <Quote>{testimonial}</Quote>
 
-      <hr />
-
-      <Spacer my={4} />
+      <SectionDivider />
 
       <Box>
         <Flex justifyContent="center">
           <Flex flexDirection="column" width="40%">
             <Box>
-              <img
-                src="/assets/images/soundlab/george-owner.jpg"
-                height={200}
-              />
+              <img src="/assets/images/soundlab/george-owner.jpg" />
             </Box>
             <Text textAlign="center" fontSize={2}>
               George Rezendes owner, engineer, producer, musician
@@ -60,11 +54,7 @@ export const StudioTemplate = props => {
           <Spacer mx={4} />
           <Flex flexDirection="column" width="40%">
             <Box>
-              <img
-                src="/assets/images/soundlab/cj.jpg"
-                width="auto"
-                height={200}
-              />
+              <img src="/assets/images/soundlab/cj.jpg" width="auto" />
             </Box>
             <Text textAlign="center" fontSize={2}>
               Camelia Jade ( CJ ) Lazenby recording and mastering engineer,
@@ -73,9 +63,7 @@ export const StudioTemplate = props => {
           </Flex>
         </Flex>
 
-        <Spacer my={4} />
-        <hr />
-        <Spacer my={4} />
+        <SectionDivider />
 
         <Flex justifyContent="space-between">
           <img src="/assets/images/soundlab/studio-1.jpg" width="49%" />
@@ -96,7 +84,7 @@ export const StudioTemplate = props => {
           <ReactMarkdown source={moreInfo} />
         </Box>
 
-        <hr />
+        <SectionDivider />
 
         <Flex justifyContent="center" flexDirection="column">
           <Box style={{ textAlign: "center" }}>
@@ -108,9 +96,7 @@ export const StudioTemplate = props => {
           </Box>
         </Flex>
 
-        <Box my={4}>
-          <hr />
-        </Box>
+        <SectionDivider />
 
         <Box>
           <ReactMarkdown source={artists} />
