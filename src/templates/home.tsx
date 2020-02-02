@@ -81,9 +81,14 @@ export const HomeTemplate = props => {
                 alignItems={["center", "inherit"]}
                 width="100%"
               >
-                <Box width={["100%", "33%"]} pr={[0, 4]}>
+                <Flex
+                  width={["100%", "33%"]}
+                  pr={[0, 4]}
+                  mb={[4, 0]}
+                  justifyContent={["center", "inherit"]}
+                >
                   <img src={release.image} />
-                </Box>
+                </Flex>
                 <Box width={["100%", "66%"]}>
                   <ReactMarkdown source={release.description} />
                 </Box>
