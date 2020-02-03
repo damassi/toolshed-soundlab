@@ -11,7 +11,7 @@ features: >-
   * 12’ x 16’ control room equipped with Burl Audio B32 Summing amp / B26
   Monitor control & Mackie MCU
 
-  * Microphones: Pearlman, MBHO, Neaumann, B&0, Beyer, Sennheiser, Ear Trumpet,
+  * Microphones: Pearlman, MBHO, Neumann, B&0, Beyer, Sennheiser, Ear Trumpet,
   Miktek, Beyer, Sony
 
   * Preamps: Forssell, UA, Vintech, Grace, Langevin, Focusrite, Joe Meek, Guido
@@ -112,3 +112,4 @@ artists: |-
   * David Vohs
 templateKey: studio
 ---
+
