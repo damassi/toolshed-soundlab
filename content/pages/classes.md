@@ -6,7 +6,7 @@ content: >-
 
   * I offer private guitar lessons at my studio and at Crossroads Music
 
-  * Please contact me with availability
+  * Please [contact me](/contact) with availability
 
   * Tuition: $35 / 45 minutes, $45 / one hour or $120 per month includes 4
   weekly 45 minute lessons
@@ -26,7 +26,7 @@ content: >-
 
   * A 10 week class focusing on singing lead and harmonies
 
-  * Contact me for next session dates
+  * [Contact me](/contact) for next session dates
 
   * Enrollment limited to 12 students
 

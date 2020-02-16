@@ -40,6 +40,7 @@ const Layout = ({ children }) => {
             pt={[5, 4]}
             ml={[0, 250]}
             backgroundColor="#693807"
+            width="100%"
             style={{
               borderRadius: 4,
             }}

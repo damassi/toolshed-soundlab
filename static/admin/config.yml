@@ -110,4 +110,5 @@ collections:
         name: "contact"
         fields:
           - { name: title, label: Title }
+          - { name: content, label: Content, widget: markdown }
           - { name: templateKey, label: "Template Key", default: "contact" }

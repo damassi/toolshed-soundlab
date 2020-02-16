@@ -4,11 +4,11 @@ import { SEO } from "src/components/seo"
 import { ContactTemplate } from "src/templates/contact"
 import { graphql } from "gatsby"
 
-export default function ContactPage() {
+export default function ContactPage(props) {
   return (
     <Layout>
       <SEO title="Contact" />
-      <ContactTemplate />
+      <ContactTemplate {...props.data.markdownRemark} />
     </Layout>
   )
 }
@@ -18,6 +18,7 @@ export const pageQuery = graphql`
     markdownRemark(fields: { slug: { eq: "/contact/" } }) {
       frontmatter {
         title
+        content
         templateKey
       }
     }
