@@ -34,6 +34,10 @@ const GlobalStyle = createGlobalStyle`
     border: 0;
     background-color: white;
   }
+
+  a {
+    color: #ffc302;
+  }
 `
 
 export const ThemeProvider = props => {
